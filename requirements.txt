@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+openai
+python-dotenv
+requests
+langchain
+faiss-cpu
+PyMuPDF
+langchain_openai
