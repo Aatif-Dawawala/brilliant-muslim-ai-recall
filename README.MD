@@ -31,7 +31,8 @@ Stack:
 ## Local Setup
 
 ### Clone the Repo
-```bash git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
+```
+bash git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
 cd arabic lesson-eval
 ```
 
