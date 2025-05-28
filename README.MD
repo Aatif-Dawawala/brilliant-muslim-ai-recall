@@ -7,3 +7,20 @@ Stack:
 - PDF textbook embedding using FAISS
 - Streamlit frontend
 - LangChain for vector search
+
+---
+
+## Functionality
+
+1. Displays Arabic language lessons.
+2. Users type what they remember about a lesson.
+3. The app retrieves relevant content using RAG.
+4. AI scores the response and highlights:
+    - Correct points
+    - Incorrect understanding
+    - Missed concepts
+    - Feedback
+
+---
+
+## Live Demo
