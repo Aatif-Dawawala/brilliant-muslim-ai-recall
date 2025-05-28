@@ -43,6 +43,7 @@ Instructions:
 - Identify what the student got right, wrong, and left out.
 - Give a score out of 100.
 - Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
 
 Response in this JSON format:
 {{
@@ -50,7 +51,8 @@ Response in this JSON format:
     "correct_points": [...],
     "incorrect_points": [...],
     "missed_points": [...],
-    "generated_feedback": "..."
+    "generated_feedback": "...",
+    "rewritten_answer": "..."
 }}
 """
     response = client.chat.completions.create(
@@ -102,7 +104,7 @@ if st.button("Evaluate Response"):
             result = evaluate_response_with_rag(user_input)
 
             st.success(f"Your Score: {result['score']}/100")
-            st.subheader("Correct Poitns")
+            st.subheader("Correct Points")
             for pt in result["correct_points"]:
                 st.markdown(f"- {pt}")
             
@@ -112,5 +114,21 @@ if st.button("Evaluate Response"):
 
             st.subheader("Feedback")
             st.info(result["generated_feedback"])
+
+            # Level
+            score = result['score']
+            if score >= 90:
+                level = "Excellent"
+            elif score >= 70:
+                level = "Good"
+            else:
+                level = "Needs review"
+
+            st.markdown("### Performance:")
+            st.markdown(f"#### {level}") 
+
+            # Rewrite
+            st.subheader("Suggested Improved Answer")
+            st.info(result["rewritten_answer"])
         except Exception as e:
             st.error(f"Error: {e}")
