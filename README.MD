@@ -24,3 +24,19 @@ Stack:
 ---
 
 ## Live Demo
+[Launch on Streamlit Cloud](https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/)
+
+---
+
+## File Structure
+
+arabic-lesson-eval/
+├── streamlit_app.py # Main app
+├── rag/
+│ ├── textbook.pdf # Dream textbook
+│ ├── ingest_pdf.py # Converts PDF to vector DB
+│ └── vector_store/ # FAISS vector index
+├── requirements.txt
+├── .streamlit/
+│ └── secrets.toml #
+└── README.md
