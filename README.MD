@@ -28,15 +28,25 @@ Stack:
 
 ---
 
-## File Structure
+## Local Setup
 
-arabic-lesson-eval/
-├── streamlit_app.py # Main app
-├── rag/
-│ ├── textbook.pdf # Dream textbook
-│ ├── ingest_pdf.py # Converts PDF to vector DB
-│ └── vector_store/ # FAISS vector index
-├── requirements.txt
-├── .streamlit/
-│ └── secrets.toml #
-└── README.md
+### Clone the Repo
+'''bash git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
+cd arabic lesson-eval
+'''
+
+### Install Dependencies
+'''pip install -r requirements.txt'''
+
+### Add API Key
+Create a .env file or .streamlist/secrets.toml:
+'''OPENAI_API_KEY=your-key-here'''
+
+### Run Locally
+'''streamlit run streamlit_app.py'''
+
+## License 
+MIT
+
+## Contributing
+Pull requests are welcome. Let's help Arabic learners around the world!
