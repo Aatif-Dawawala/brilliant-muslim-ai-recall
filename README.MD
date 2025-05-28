@@ -31,19 +31,19 @@ Stack:
 ## Local Setup
 
 ### Clone the Repo
-'''bash git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
+```bash git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
 cd arabic lesson-eval
-'''
+```
 
 ### Install Dependencies
-'''pip install -r requirements.txt'''
+```pip install -r requirements.txt```
 
 ### Add API Key
 Create a .env file or .streamlist/secrets.toml:
-'''OPENAI_API_KEY=your-key-here'''
+```OPENAI_API_KEY=your-key-here```
 
 ### Run Locally
-'''streamlit run streamlit_app.py'''
+```streamlit run streamlit_app.py```
 
 ## License 
 MIT
