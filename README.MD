@@ -40,7 +40,7 @@ cd arabic lesson-eval
 ```pip install -r requirements.txt```
 
 ### Add API Key
-Create a .env file or .streamlist/secrets.toml:
+Create a ```.env``` file or ```.streamlist/secrets.toml```:
 ```OPENAI_API_KEY=your-key-here```
 
 ### Run Locally
