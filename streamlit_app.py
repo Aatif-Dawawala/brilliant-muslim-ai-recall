@@ -102,33 +102,56 @@ if st.button("Evaluate Response"):
     with st.spinner("Evaluating with AI..."):
         try: 
             result = evaluate_response_with_rag(user_input)
-
-            st.success(f"Your Score: {result['score']}/100")
-            st.subheader("Correct Points")
-            for pt in result["correct_points"]:
-                st.markdown(f"- {pt}")
             
-            st.subheader("Incorrect Points")
-            for pt in result["incorrect_points"]:
-                st.markdown(f"- {pt}")
-
-            st.subheader("Feedback")
-            st.info(result["generated_feedback"])
-
-            # Level
+            # Score + Performance
             score = result['score']
             if score >= 90:
                 level = "Excellent"
+                color = "green"
             elif score >= 70:
                 level = "Good"
+                color = "blue"
             else:
                 level = "Needs review"
+                color = "red"
 
-            st.markdown("### Performance:")
-            st.markdown(f"#### {level}") 
+            st.success(f"Score: {score}/100")
+            st.markdown(f"### Performance Level: <span style='color:{color}'>{level}</span>", unsafe_allow_html=True)
 
-            # Rewrite
-            st.subheader("Suggested Improved Answer")
+            # Feedback paragraph
+            st.markdown("---")
+            st.markdown("### Feedback Summary")
+            st.success(result["generated_feedback"])
+
+            # Detailed analysis
+            st.markdown("---")
+            st.markdown("### Detailed Evaluation")
+
+            with st.expander("Correct Points"):
+                if result["correct_points"]:
+                    for pt in result["correct_points"]:
+                        st.markdown(f"- {pt}")
+                else:
+                    st.markdown("_None detected._")
+
+            with st.expander("Incorrect Points"):
+                if result["incorrect_points"]:
+                    for pt in result["incorrect_points"]:
+                        st.markdown(f"- {pt}")
+                else:
+                    st.markdown("_No misunderstandings identified._")
+
+            with st.expander("Missed Points"):
+                if result["missed_points"]:
+                    for pt in result["missed_points"]:
+                        st.markdown(f"- {pt}")
+                else:
+                    st.markdown("_No major points were missed._")
+
+            # Rewrite 
+            st.markdown("---")
+            st.markdown("### Suggested Improved Answer")
             st.info(result["rewritten_answer"])
+
         except Exception as e:
             st.error(f"Error: {e}")
