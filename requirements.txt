@@ -10,3 +10,4 @@ faiss-cpu
 PyMuPDF
 langchain_openai
 langchain_community
+streamlit
