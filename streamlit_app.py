@@ -24,8 +24,11 @@ def retrieve_chunks(user_response, k=4):
     results = db.similarity_search(user_response, k=k)
     return "\n---\n".join([doc.page_content for doc in results])
 
-def evaluate_response_with_rag(user_response: str) -> dict:
+def evaluate_response_with_rag(user_response: str, lesson) -> dict:
     retrieved_text = retrieve_chunks(user_response)
+    key_points = lesson["key_points"]
+
+    key_points_text = "\n".join(f"- {pt}" for pt in key_points)
 
 
     prompt = f"""
@@ -35,6 +38,9 @@ Here is the relevant content retrieved from the textbook
 <<<
 {retrieved_text}
 >>>
+
+And here are the key points the student should recall:
+{key_points_text}
 
 The student wrote:
 \"\"\"{user_response}\"\"\"
@@ -71,17 +77,98 @@ API_URL = "http://127.0.0.1:8000/evaluate"
 
 LESSONS = {
     "lesson1": {
-        "title": "اسم الإشارة",
+        "title": "الإعراب",
         "content": """
-### اسم الإشارة
-The اسماء الإشارة include:
-- هذا
-- هذه
-- ذلك
-- تلك
+            ### الإعراب
+            The Arabic cases are:
+            - الرفع
+                - Primarily used for the subject, predicate, and doer.
+            - النصب
+                - Primarily used for the done-to and after حروف which trigger it's use.
+            - الجر
+                - Primarily used after prepositions.
 
-They are used as pointer words, and must match in gender and number with what they are pointing at.
-""",
+            Cases in Arabic are applied through case markers at the end of words. They help signify what role a word plays in a sentence.
+        """,
+        "key_points": [
+            "الرفع is primarily used for the subject, predicate, and doer.",
+            "النصب is primarily used for the done-to and after حروف which trigger its use.",
+            "الجر is primarily used after prepositions."
+        ]
+    },
+        "lesson2": {
+        "title": "How to tell status",
+        "content": """
+            ### Determining Status
+            Status is generally determined by the ending sound or combination.
+            
+            - Singular words that end with a ضمة or ضمتان generally are الرفع.
+            - Singular words that end with a كسرة or كسرتان generally are الجر.
+            - Singular words that end with a فتحة or فتحتان generally are النصب. 
+        """,
+        "key_points": [
+            "Singular words that end with a ضمة or ضمتان generally are الرفع.",
+            "Singular words that end with a كسرة or كسرتان generally are الجر.",
+            "Singular words that end with a فتحة or فتحتان generally are النصب."         ]
+    },
+        "lesson2": {
+        "title": "Light vs. Heavy",
+        "content": """
+            ### Understanding Light and Heavy Words
+            Words can either be light or heavy, with heavy being the default.
+            In order to make a word light, simply remove the ن at the end.
+
+            For example:
+            - مسلمٌ <- مسلمُ
+            - مسلمان <- مسلما
+            - مسلمون <- مسلمو
+
+            - Words are never light unless there is a specific reason for them to be.
+        """,
+        "key_points": [
+            "Words are heavy by default",
+            "To make a word light, they ن must be removed."
+            "Words are never light unless there is a specific reason for them to be."
+        ]
+    },
+        "lesson3": {
+        "title": "Flexibility",
+        "content": """
+            ### Flexibility
+            Flexibilty is a sub-category of status, and only pertains to words that have an ending sound (as opposed to ending combination).
+            - This means that flexibility only pertains to singular words.
+
+            There are three types of flexibility:
+            - Fully-flexible
+            - Party-flexible
+            - Non-flexible
+        """,
+        "key_points": [
+                "Flexbility is a sub-category of status",
+                "Flexbility only pertains to singular words",
+                "Words may only be fully-flexible, partly-flexible, or non-flexible."
+        ]
+    },
+        "lesson4": {
+        "title": "Pronouns",
+        "content": """
+            ### Pronouns in Arabic
+            Arabic has 1st person, 2nd person, and 3rd person pronouns. The 1st person pronouns have the singular and plural form, and the 2nd/3rd person pronouns have singular, dual, and plural forms.   
+
+            Pronouns may take three forms:
+            - الضمير المستتر
+                - Pronouns within أفعال.
+            - الضمير المنفصل
+                - Pronouns independently standing by themselves.
+            - الضمير المتصل
+                - Attached pronouns.
+            """,
+        "key_points": [
+                "Arabic has 1st person, 2nd person, and 3rd person pronouns",
+                "The 1st person pronouns have singular and plural forms.",
+                "The 2nd/3rd person pronouns have singular, dual, and plural forms.",
+                "There are three forms that pronouns can take: الضمير المستتر, الضمير المنفصل, الضمير المتصل"
+        ]
     }
 }
 
@@ -101,7 +188,7 @@ user_input = st.text_area("Type everything you recall from this lesson", height=
 if st.button("Evaluate Response"):
     with st.spinner("Evaluating with AI..."):
         try: 
-            result = evaluate_response_with_rag(user_input)
+            result = evaluate_response_with_rag(user_input, lesson)
             
             # Score + Performance
             score = result['score']
