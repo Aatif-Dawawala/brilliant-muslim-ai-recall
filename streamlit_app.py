@@ -7,11 +7,29 @@ import openai
 import os
 from dotenv import load_dotenv
 from typing import List
+from google import genai
+from pydantic import BaseModel
 
 load_dotenv()
-client = openai.OpenAI(
+openaiClient = openai.OpenAI(
     api_key = os.getenv("OPENAI_API_KEY")
 )
+
+geminiClient = genai.Client(
+    api_key = os.getenv("GEMINI_API_KEY")
+)
+
+class outputFormat(BaseModel):
+    score: int
+    correct_points: list[str]
+    incorrect_points: list[str]
+    missed_points: list[str]
+    generated_feedback: str
+    rewritten_answer: str
+
+
+useGemini = True
+useOpenAI = False
 
 VECTOR_PATH = "./rag/vector_store"
 
@@ -91,7 +109,7 @@ Your response:
             }}
 ]
 
-Response in this JSON format:
+Response in this JSON format :
 {{
     "score": <number>,
     "correct_points": [...],
@@ -101,17 +119,32 @@ Response in this JSON format:
     "rewritten_answer": "..."
 }}
 """
-    response = client.chat.completions.create(
-        model="gpt-4.1",
-        messages=[
-            {"role": "system", "content": "You are an expect Arabic language tutor."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=.2
-    )
+    if useOpenAI:
+        response = openaiClient.chat.completions.create(
+            model="gpt-4.1",
+            messages=[
+                {"role": "system", "content": "You are an expect Arabic language tutor."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=.2
+        )
 
-    content = response.choices[0].message.content
-    return json.loads(content)
+        content = response.choices[0].message.content
+        print(content)
+        return json.loads(content)
+    
+    if useGemini:
+        response = geminiClient.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=prompt,
+            config={
+                "response_mime_type": "application/json",
+                "response_schema": outputFormat,
+            }
+        )
+        content = response.text
+        print(content)
+        return json.loads(content)
 
 API_URL = "http://127.0.0.1:8000/evaluate"
 
