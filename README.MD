@@ -33,7 +33,7 @@ Stack:
 ### Clone the Repo
 ```
 bash git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
-cd arabic lesson-eval
+cd arabic-lesson-eval
 ```
 
 ### Install Dependencies
