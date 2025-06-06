@@ -130,7 +130,6 @@ Response in this JSON format :
         )
 
         content = response.choices[0].message.content
-        print(content)
         return json.loads(content)
     
     if useGemini:
@@ -143,7 +142,6 @@ Response in this JSON format :
             }
         )
         content = response.text
-        print(content)
         return json.loads(content)
 
 API_URL = "http://127.0.0.1:8000/evaluate"
