@@ -27,10 +27,6 @@ class outputFormat(BaseModel):
     generated_feedback: str
     rewritten_answer: str
 
-
-useGemini = True
-useOpenAI = False
-
 VECTOR_PATH = "./rag/vector_store"
 
 def retrieve_chunks(user_response, k=4):
@@ -42,7 +38,7 @@ def retrieve_chunks(user_response, k=4):
     results = db.similarity_search(user_response, k=k)
     return "\n---\n".join([doc.page_content for doc in results])
 
-def evaluate_response_with_rag(user_response: str, lesson) -> dict:
+def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) -> dict:
     retrieved_text = retrieve_chunks(user_response)
     key_points = lesson["key_points"]
 
@@ -119,7 +115,7 @@ Response in this JSON format :
     "rewritten_answer": "..."
 }}
 """
-    if useOpenAI:
+    if "OpenAI" in model_choice:
         response = openaiClient.chat.completions.create(
             model="gpt-4.1",
             messages=[
@@ -132,9 +128,9 @@ Response in this JSON format :
         content = response.choices[0].message.content
         return json.loads(content)
     
-    if useGemini:
+    elif "Gemini" in model_choice:
         response = geminiClient.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-2.5-pro-preview-06-05",
             contents=prompt,
             config={
                 "response_mime_type": "application/json",
@@ -143,6 +139,9 @@ Response in this JSON format :
         )
         content = response.text
         return json.loads(content)
+    
+    else:
+        raise ValueError("Unsupported model selected")
 
 API_URL = "http://127.0.0.1:8000/evaluate"
 
@@ -247,6 +246,11 @@ st.set_page_config(page_title="Arabic Lesson Recall", layout="wide")
 st.title("Arabic Lesson Recall")
 
 # Select
+model_choice = st.selectbox(
+    "Choose evaluation model:",
+    options=["OpenAI", "Gemini"],
+    index=0
+)
 lesson_id = st.selectbox("Choose a lesson:", options=list(LESSONS.keys()), format_func=lambda k: LESSONS[k]["title"])
 lesson = LESSONS[lesson_id]
 
@@ -259,7 +263,7 @@ user_input = st.text_area("Type everything you recall from this lesson", height=
 if st.button("Evaluate Response"):
     with st.spinner("Evaluating with AI..."):
         try: 
-            result = evaluate_response_with_rag(user_input, lesson)
+            result = evaluate_response_with_rag(user_input, lesson, model_choice)
             
             # Score + Performance
             score = result['score']
