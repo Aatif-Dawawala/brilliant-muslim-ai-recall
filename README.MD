@@ -3,7 +3,7 @@
 An interactive app for Arabic students to practice **active recall** using AI evaluation based on Bayyinah Institute's Dream textbook.
 
 Stack:
-- OpenAI GPT
+- Gemini 2.5 Pro & OpenAI GPT 4.1
 - PDF textbook embedding using FAISS
 - Streamlit frontend
 - LangChain for vector search
