@@ -42,7 +42,8 @@ cd arabic-lesson-eval
 ### Add API Key
 Create a ```.env``` file or ```.streamlist/secrets.toml```:
 ```OPENAI_API_KEY=your-key-here
-GEMINI_API_KEY=your-key-here```
+GEMINI_API_KEY=your-key-here
+```
 
 ### Run Locally
 ```streamlit run streamlit_app.py```
