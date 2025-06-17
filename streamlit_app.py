@@ -111,7 +111,7 @@ LESSONS = {
             "Singular words that end with a كسرة or كسرتان generally are الجر.",
             "Singular words that end with a فتحة or فتحتان generally are النصب."         ]
     },
-        "lesson2": {
+        "lesson3": {
         "title": "Light vs. Heavy",
         "content": """
             ### Understanding Light and Heavy Words
@@ -131,7 +131,7 @@ LESSONS = {
             "Words are never light unless there is a specific reason for them to be."
         ]
     },
-        "lesson3": {
+        "lesson4": {
         "title": "Flexibility",
         "content": """
             ### Flexibility
@@ -149,7 +149,7 @@ LESSONS = {
                 "Words may only be fully-flexible, partly-flexible, or non-flexible."
         ]
     },
-        "lesson4": {
+        "lesson5": {
         "title": "Pronouns",
         "content": """
             ### Pronouns in Arabic
