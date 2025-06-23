@@ -194,6 +194,7 @@ if st.button("Evaluate Response"):
     with st.spinner("Evaluating with AI..."):
         try: 
             result = evaluate_response_with_rag(user_input, lesson, model_choice)
+            print(result)
             
             # Score + Performance
             score = result['score']
