@@ -68,6 +68,9 @@ pointwise_result = eval_task.evaluate()
 
 print(pointwise_result.metrics_table)
 
+with open("eval_results.txt", "w") as f:
+    f.write(pointwise_result.metrics_table.to_string())
+
 aiplatform.ExperimentRun(
     run_name=pointwise_result.metadata["experiment_run"],
     experiment = pointwise_result.metadata["experiment"],
