@@ -10,6 +10,7 @@ from typing import List
 from google import genai
 from pydantic import BaseModel
 from prompt_templates import build_rag_prompt
+from evaluation_logger import append_example
 
 load_dotenv()
 openaiClient = openai.OpenAI(
@@ -194,6 +195,7 @@ if st.button("Evaluate Response"):
     with st.spinner("Evaluating with AI..."):
         try: 
             result = evaluate_response_with_rag(user_input, lesson, model_choice)
+            append_example(user_input, result)
             print(result)
             
             # Score + Performance
