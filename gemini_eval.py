@@ -54,9 +54,7 @@ responses = [
     """,
 ]
 
-eval_dataset = pd.DataFrame({
-    "response": responses,
-})
+eval_dataset = pd.read_csv("eval_dataset.csv")
 
 eval_task = EvalTask(
     dataset=eval_dataset,
