@@ -57,6 +57,7 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) ->
         )
 
         content = response.choices[0].message.content
+        append_example(prompt, content)
         return json.loads(content)
     
     elif "Gemini" in model_choice:
@@ -69,6 +70,7 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) ->
             }
         )
         content = response.text
+        append_example(prompt, content)
         return json.loads(content)
     
     else:
@@ -195,7 +197,6 @@ if st.button("Evaluate Response"):
     with st.spinner("Evaluating with AI..."):
         try: 
             result = evaluate_response_with_rag(user_input, lesson, model_choice)
-            append_example(user_input, result)
             print(result)
             
             # Score + Performance
