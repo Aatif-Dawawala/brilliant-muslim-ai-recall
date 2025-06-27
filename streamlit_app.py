@@ -138,17 +138,17 @@ LESSONS = {
         "title": "Flexibility",
         "content": """
             ### Flexibility
-            Flexibilty is a sub-category of status, and only pertains to words that have an ending sound (as opposed to ending combination).
+            Flexibility is a sub-category of status, and only pertains to words that have an ending sound (as opposed to ending combination).
             - This means that flexibility only pertains to singular words.
 
             There are three types of flexibility:
             - Fully-flexible
-            - Party-flexible
+            - Partly-flexible
             - Non-flexible
         """,
         "key_points": [
-                "Flexbility is a sub-category of status",
-                "Flexbility only pertains to singular words",
+                "Flexibility is a sub-category of status",
+                "Flexibility only pertains to singular words",
                 "Words may only be fully-flexible, partly-flexible, or non-flexible."
         ]
     },
