@@ -120,4 +120,4 @@ This project is released under the **MIT License** – see [`LICENSE`](LICENSE) 
 
 ---
 
-© 2025 Brilliant Muslim. By using this software you agree to our [Terms of Service](https://brilliantmuslim.com/terms) and [Privacy Policy](https://brilliantmuslim.com/privacy).
+© 2025 Brilliant Muslim. By using this software you agree to our [Privacy Policy](https://brilliantmuslim.com/privacy).
