@@ -1,56 +1,123 @@
-# Arabic Lesson Evaluator 
+# Brilliant Muslim Arabic Lesson Evaluator
 
-An interactive app for Arabic students to practice **active recall** using AI evaluation based on Bayyinah Institute's Dream textbook.
+[![License: MIT](https://img.shields.io/badge/license-MIT-454377.svg)](LICENSE)
+[![Documentation](https://img.shields.io/badge/read-the%20docs-4d6a91.svg)](https://github.com/aatif-dawawala/arabic-lesson-eval/wiki)
+[![GitHub Discussions](https://img.shields.io/badge/ask-%20on%20github-4d6a91.svg)](https://github.com/aatif-dawawala/arabic-lesson-eval/discussions)
+[![Streamlit Cloud](https://img.shields.io/badge/demo-Open%20App-14ae73.svg)](https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/)
 
-Stack:
-- Gemini 2.5 Pro & OpenAI GPT 4.1
-- PDF textbook embedding using FAISS
-- Streamlit frontend
-- LangChain for vector search
+An **interactive, AI-powered recall trainer** built for learners of the *Bayyinah Institute Dream* curriculum. Type what you remember, let the app retrieve the relevant material, and get instant formative feedback.
 
----
+## Table of Contents
 
-## Functionality
+<!-- TOC -->
 
-1. Displays Arabic language lessons.
-2. Users type what they remember about a lesson.
-3. The app retrieves relevant content using RAG.
-4. AI scores the response and highlights:
-    - Correct points
-    - Incorrect understanding
-    - Missed concepts
-    - Feedback
+* [Overview](#overview)
+* [Stack](#stack)
+* [Features](#features)
+* [Live Demo](#live-demo)
+* [Getting Started](#getting-started)
 
----
+  * [Clone the Repository](#clone-the-repository)
+  * [Install Dependencies](#install-dependencies)
+  * [Environment Variables](#environment-variables)
+  * [Run Locally](#run-locally)
+* [Architecture](#architecture)
+* [Contributing](#contributing)
+* [License](#license)
+
+<!-- TOC -->
+
+## Overview
+
+Brilliant Muslim’s **Arabic Lesson Evaluator** helps students shift from passive review to **active recall**. It embeds the Dream textbook as searchable vectors, evaluates free-text answers with large language models, and delivers color-coded feedback so you know exactly what to fix next.
+
+## Stack
+
+| Layer          | Tech & Services                    |
+| -------------- | ---------------------------------- |
+| **LLM / Eval** | OpenAI GPT-4o · Gemini 2.5 Pro     |
+| **Retrieval**  | FAISS vector store + LangChain RAG |
+| **Frontend**   | Streamlit                          |
+| **Hosting**    | Streamlit Community Cloud (demo)   |
+
+## Features
+
+1. **Lesson Browser** – Flip through textbook units inside the app.
+2. **Active Recall Input** – Type everything you remember; no multiple-choice crutches.
+3. **RAG Retrieval** – Relevant textbook passages surface automatically.
+4. **AI Scoring** – Your answer is graded on accuracy and completeness.
+5. **Granular Feedback**
+
+   * ✅ Correct points
+   * ❌ Misunderstandings
+   * ⚠️ Missed concepts
+   * 💡 Actionable advice
 
 ## Live Demo
-[Launch on Streamlit Cloud](https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/)
 
----
+> **Try it now →** [https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/](https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/)
 
-## Local Setup
+## Getting Started
 
-### Clone the Repo
-```
-bash git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
+### Clone the Repository
+
+```bash
+git clone https://github.com/aatif-dawawala/arabic-lesson-eval.git
 cd arabic-lesson-eval
 ```
 
 ### Install Dependencies
-```pip install -r requirements.txt```
 
-### Add API Key
-Create a ```.env``` file or ```.streamlist/secrets.toml```:
+```bash
+pip install -r requirements.txt
 ```
-OPENAI_API_KEY="your-key-here"
-GEMINI_API_KEY="your-key-here"
+
+### Environment Variables
+
+Create a `.env` **or** `.streamlit/secrets.toml` file:
+
+```toml
+OPENAI_API_KEY   = "your-openai-key"
+GEMINI_API_KEY   = "your-gemini-key"
 ```
 
 ### Run Locally
-```streamlit run streamlit_app.py```
 
-## License 
-MIT
+```bash
+streamlit run streamlit_app.py
+```
+
+The app will open at [http://localhost:8501](http://localhost:8501).
+
+## Architecture
+
+```text
+┌──────────────┐
+│  Streamlit   │  ←– UI
+└──────┬───────┘
+       │ user prompt
+┌──────▼─────────┐
+│ LangChain RAG  │  ←– chunking & similarity search
+└──────┬─────────┘
+       │ relevant docs
+┌──────▼─────────┐
+│   LLM Scorer   │  ←– GPT-4o / Gemini
+└──────┬─────────┘
+       │ feedback JSON
+┌──────▼─────────┐
+│  Streamlit UI  │  ←– highlights & scores
+└────────────────┘
+```
 
 ## Contributing
-Pull requests are welcome. Let's help Arabic learners around the world!
+
+Pull requests are welcome—help us empower Arabic learners worldwide!
+Please follow the conventional commit style and open an issue first if you plan a large change.
+
+## License
+
+This project is released under the **MIT License** – see [`LICENSE`](LICENSE) for details.
+
+---
+
+© 2025 Brilliant Muslim. By using this software you agree to our [Terms of Service](https://brilliantmuslim.com/terms) and [Privacy Policy](https://brilliantmuslim.com/privacy).
