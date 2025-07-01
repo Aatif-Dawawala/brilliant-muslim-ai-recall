@@ -2,7 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-454377.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/read-the%20docs-4d6a91.svg)](https://github.com/aatif-dawawala/arabic-lesson-eval/wiki)
-[![GitHub Discussions](https://img.shields.io/badge/ask-%20on%20github-4d6a91.svg)](https://github.com/aatif-dawawala/arabic-lesson-eval/discussions)
 [![Streamlit Cloud](https://img.shields.io/badge/demo-Open%20App-14ae73.svg)](https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/)
 
 An **interactive, AI-powered recall trainer** built for learners of the *Bayyinah Institute Dream* curriculum. Type what you remember, let the app retrieve the relevant material, and get instant formative feedback.
