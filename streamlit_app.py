@@ -178,6 +178,10 @@ LESSONS = {
 st.set_page_config(page_title="Arabic Lesson Recall", layout="wide")
 st.title("Arabic Lesson Recall")
 
+# Initialize recall flag
+if "show_recall" not in st.session_state:
+    st.session_state.show_recall = False
+
 # Select
 model_choice = st.selectbox(
     "Choose evaluation model:",
@@ -187,67 +191,76 @@ model_choice = st.selectbox(
 lesson_id = st.selectbox("Choose a lesson:", options=list(LESSONS.keys()), format_func=lambda k: LESSONS[k]["title"])
 lesson = LESSONS[lesson_id]
 
-st.markdown(lesson["content"], unsafe_allow_html=True)
+if not st.session_state.show_recall:
+    # Show the lesson content until recall is started
+    st.markdown(lesson["content"], unsafe_allow_html=True)
+    if st.button("Start Recall"):
+        st.session_state.show_recall = True
+else:
+    # Input
+    st.subheader("What do you remember?")
+    user_input = st.text_area(
+        "Type everything you recall from this lesson", height=200
+    )
 
-# Input
-st.subheader("What do you remember?")
-user_input = st.text_area("Type everything you recall from this lesson", height=200)
-
-if st.button("Evaluate Response"):
-    with st.spinner("Evaluating with AI..."):
-        try: 
-            result = evaluate_response_with_rag(user_input, lesson, model_choice)
-            print(result)
+    if st.button("Evaluate Response"):
+        with st.spinner("Evaluating with AI..."):
+            try:
+                result = evaluate_response_with_rag(user_input, lesson, model_choice)
+                print(result)
             
-            # Score + Performance
-            score = result['score']
-            if score >= 90:
-                level = "Excellent"
-                color = "green"
-            elif score >= 70:
-                level = "Good"
-                color = "blue"
-            else:
-                level = "Needs review"
-                color = "red"
-
-            st.success(f"Score: {score}/100")
-            st.markdown(f"### Performance Level: <span style='color:{color}'>{level}</span>", unsafe_allow_html=True)
-
-            # Feedback paragraph
-            st.markdown("---")
-            st.markdown("### Feedback Summary")
-            st.success(result["generated_feedback"])
-
-            # Detailed analysis
-            st.markdown("---")
-            st.markdown("### Detailed Evaluation")
-
-            with st.expander("Correct Points"):
-                if result["correct_points"]:
-                    for pt in result["correct_points"]:
-                        st.markdown(f"- {pt}")
+                # Score + Performance
+                score = result['score']
+                if score >= 90:
+                    level = "Excellent"
+                    color = "green"
+                elif score >= 70:
+                    level = "Good"
+                    color = "blue"
                 else:
-                    st.markdown("_None detected._")
+                    level = "Needs review"
+                    color = "red"
 
-            with st.expander("Incorrect Points"):
-                if result["incorrect_points"]:
-                    for pt in result["incorrect_points"]:
-                        st.markdown(f"- {pt}")
-                else:
-                    st.markdown("_No misunderstandings identified._")
+                st.success(f"Score: {score}/100")
+                st.markdown(
+                    f"### Performance Level: <span style='color:{color}'>{level}</span>",
+                    unsafe_allow_html=True,
+                )
 
-            with st.expander("Missed Points"):
-                if result["missed_points"]:
-                    for pt in result["missed_points"]:
-                        st.markdown(f"- {pt}")
-                else:
-                    st.markdown("_No major points were missed._")
+                # Feedback paragraph
+                st.markdown("---")
+                st.markdown("### Feedback Summary")
+                st.success(result["generated_feedback"])
 
-            # Rewrite 
-            st.markdown("---")
-            st.markdown("### Suggested Improved Answer")
-            st.info(result["rewritten_answer"])
+                # Detailed analysis
+                st.markdown("---")
+                st.markdown("### Detailed Evaluation")
 
-        except Exception as e:
-            st.error(f"Error: {e}")
+                with st.expander("Correct Points"):
+                    if result["correct_points"]:
+                        for pt in result["correct_points"]:
+                            st.markdown(f"- {pt}")
+                    else:
+                        st.markdown("_None detected._")
+
+                with st.expander("Incorrect Points"):
+                    if result["incorrect_points"]:
+                        for pt in result["incorrect_points"]:
+                            st.markdown(f"- {pt}")
+                    else:
+                        st.markdown("_No misunderstandings identified._")
+
+                with st.expander("Missed Points"):
+                    if result["missed_points"]:
+                        for pt in result["missed_points"]:
+                            st.markdown(f"- {pt}")
+                    else:
+                        st.markdown("_No major points were missed._")
+
+                # Rewrite
+                st.markdown("---")
+                st.markdown("### Suggested Improved Answer")
+                st.info(result["rewritten_answer"])
+
+            except Exception as e:
+                st.error(f"Error: {e}")
