@@ -1,4 +1,4 @@
-# Brilliant Muslim Arabic Lesson Evaluator
+# Brilliant Muslim Arabic Lesson Recall
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-454377.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/read-the%20docs-4d6a91.svg)](https://github.com/aatif-dawawala/arabic-lesson-eval/wiki)
