@@ -35,6 +35,21 @@ custom_text_quality = PointwiseMetric(
                     "critiques the text should reflect that, and if there are legitimate crtiques, the text should reflect that."
                 
             ),
+            "fluency": (
+
+                    "Sentences flow smoothly and are easy to read, avoiding awkward"
+                    " phrasing or run-on sentences. Ideas and sentences connect"
+                    " logically, using transitions effectively where needed."    
+                            
+            ),
+            "constructiveness": (
+
+                    "The feedback given is useful and accurate. The feedback directly"
+                    " references mistakes the user made (or things done well). If mistakes"
+                    " were made, the model corrects them and outputs feedback on how to "
+                    "avoid the mistake going forward."
+
+            )
         },
         rating_rubric={
             
