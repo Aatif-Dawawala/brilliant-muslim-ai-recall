@@ -204,7 +204,7 @@ else:
     )
 
     if st.button("Evaluate Response"):
-        with st.spinner("Evaluating with AI..."):
+        with st.spinner("Evaluating..."):
             try:
                 result = evaluate_response_with_rag(user_input, lesson, model_choice)
                 print(result)
