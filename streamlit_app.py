@@ -3,31 +3,14 @@ import requests
 import json
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
-import openai
 import os
 from dotenv import load_dotenv
 from typing import List
-from google import genai
-from pydantic import BaseModel
 from prompt_templates import build_rag_prompt
 from evaluation_logger import append_example
+from model_switcher import evaluate, OutputFormat
 
 load_dotenv()
-openaiClient = openai.OpenAI(
-    api_key = os.getenv("OPENAI_API_KEY")
-)
-
-geminiClient = genai.Client(
-    api_key = os.getenv("GEMINI_API_KEY")
-)
-
-class outputFormat(BaseModel):
-    score: int
-    correct_points: list[str]
-    incorrect_points: list[str]
-    missed_points: list[str]
-    generated_feedback: str
-    rewritten_answer: str
 
 VECTOR_PATH = "./rag/vector_store"
 
@@ -45,36 +28,9 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) ->
     key_points = lesson["key_points"]
 
     prompt = build_rag_prompt(user_response, retrieved_text, key_points)
-
-    if "OpenAI" in model_choice:
-        response = openaiClient.chat.completions.create(
-            model="gpt-4.1",
-            messages=[
-                {"role": "system", "content": "You are an expect Arabic language tutor."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=.2
-        )
-
-        content = response.choices[0].message.content
-        append_example(prompt, content)
-        return json.loads(content)
-    
-    elif "Gemini" in model_choice:
-        response = geminiClient.models.generate_content(
-            model="gemini-2.5-pro-preview-06-05",
-            contents=prompt,
-            config={
-                "response_mime_type": "application/json",
-                "response_schema": outputFormat,
-            }
-        )
-        content = response.text
-        append_example(prompt, content)
-        return json.loads(content)
-    
-    else:
-        raise ValueError("Unsupported model selected")
+    result = evaluate(prompt, model_choice)
+    append_example(prompt, result)
+    return result
 
 API_URL = "http://127.0.0.1:8000/evaluate"
 
