@@ -12,3 +12,4 @@ langchain_openai
 langchain_community
 streamlit
 google-genai
+pydantic-ai
