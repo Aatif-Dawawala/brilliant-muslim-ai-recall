@@ -138,20 +138,29 @@ st.title("Arabic Lesson Recall")
 if "show_recall" not in st.session_state:
     st.session_state.show_recall = False
 
+if "hide_lesson" not in st.session_state:
+    st.session_state.hide_lesson = False
+
 # Select
 model_choice = st.selectbox(
     "Choose evaluation model:",
     options=["Gemini", "OpenAI"],
     index=0
 )
-lesson_id = st.selectbox("Choose a lesson:", options=list(LESSONS.keys()), format_func=lambda k: LESSONS[k]["title"])
-lesson = LESSONS[lesson_id]
 
-st.markdown(lesson["content"], unsafe_allow_html=True)
+if not st.session_state.hide_lesson:
+    lesson_id = st.selectbox("Choose a lesson:", options=list(LESSONS.keys()), format_func=lambda k: LESSONS[k]["title"])
+    st.session_state.lesson = lesson = LESSONS[lesson_id]
+    st.markdown(lesson["content"], unsafe_allow_html=True)
+
+print(st.session_state.lesson)
+
+
 
 if not st.session_state.show_recall:
     if st.button("Start Recall"):
         st.session_state.show_recall = True
+        st.session_state.hide_lesson = True
         st.rerun()
 else:
     # Input
@@ -163,7 +172,7 @@ else:
     if st.button("Evaluate Response"):
         with st.spinner("Evaluating..."):
             try:
-                result = evaluate_response_with_rag(user_input, lesson, model_choice)
+                result = evaluate_response_with_rag(user_input, st.session_state.lesson, model_choice)
                 print(result)
             
                 # Score + Performance
@@ -221,3 +230,8 @@ else:
 
             except Exception as e:
                 st.error(f"Error: {e}")
+    
+    if st.button("Show lesson"):
+        st.session_state.hide_lesson = False
+        st.session_state.show_recall = False
+        st.rerun()
