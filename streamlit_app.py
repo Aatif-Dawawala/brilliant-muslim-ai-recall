@@ -152,6 +152,7 @@ st.markdown(lesson["content"], unsafe_allow_html=True)
 if not st.session_state.show_recall:
     if st.button("Start Recall"):
         st.session_state.show_recall = True
+        st.rerun()
 else:
     # Input
     st.subheader("What do you remember?")
