@@ -3,10 +3,11 @@ import json
 from typing import Dict
 
 from pydantic import BaseModel
-from pydantic_ai import PydanticAI
-from pydantic_ai.openai import OpenAIChat
-from pydantic_ai.genai import GeminiChat
-
+from pydantic_ai import Agent
+from pydantic_ai.models.openai import OpenAIModel
+from pydantic_ai.providers.openai import OpenAIProvider
+from pydantic_ai.models.gemini import GeminiModel
+from pydantic_ai.providers.google_gla import GoogleGLAProvider
 
 class OutputFormat(BaseModel):
     score: int
@@ -17,27 +18,26 @@ class OutputFormat(BaseModel):
     rewritten_answer: str
 
 
-openai_llm = OpenAIChat(
-    model="gpt-4.1",
-    api_key=os.getenv("OPENAI_API_KEY"),
+openai_llm = OpenAIModel(
+    'gpt-4.1',
+    provider=OpenAIProvider(api_key=os.getenv("OPENAI_API_KEY"))
 )
 
-gemini_llm = GeminiChat(
-    model="gemini-2.5-pro-preview-06-05",
-    api_key=os.getenv("GEMINI_API_KEY"),
+openaiAgent = Agent(openai_llm, instructions="You are an expert Arabic language tutor.")
+
+gemini_llm = GeminiModel(
+    "gemini-2.5-pro",
+    provider=GoogleGLAProvider(api_key=os.getenv("GEMINI_API_KEY"))
 )
 
-MODEL_REGISTRY: Dict[str, PydanticAI] = {
-    "OpenAI": PydanticAI(llm=openai_llm, output_model=OutputFormat),
-    "Gemini": PydanticAI(llm=gemini_llm, output_model=OutputFormat),
-}
+geminiAgent = Agent(gemini_llm, instructions="You are an expert Arabic language tutor.")
 
 
 def evaluate(prompt: str, model_choice: str) -> dict:
-    ai = MODEL_REGISTRY.get(model_choice)
-    if ai is None:
-        raise ValueError("Unsupported model selected")
-    response = ai(prompt)
-    if isinstance(response, BaseModel):
-        return json.loads(response.model_dump_json())
-    return json.loads(response)
+    if model_choice == "Gemini":
+        response = geminiAgent.run_sync(user_prompt=prompt)
+    elif model_choice == "OpenAI":
+        response = openaiAgent.run_sync(user_prompt=prompt)
+    
+    print(((response.output).strip("```")).strip("json"))
+    return json.loads(((response.output).strip("```")).strip("json"))
