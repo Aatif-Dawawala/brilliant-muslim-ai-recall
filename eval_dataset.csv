@@ -1,0 +1,3155 @@
+prompt,response
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+flexible words as you are exposed to more vocabulary.  However, there are a few categories of partly-
+flexible words we can familiarize ourselves with to make identification of partly-flexible words easier.  
+A. NON-ARAB NAMES
+Non-Arab names are partly-flexible. Arab names are fully-flexible. There are four Arab prophet’s names 
+mentioned in the Quran. They are:  ٌ ,صالِحٌ  ,هُوْدٌ  ,ُمُ َمَّدand  ٌ .شُ عَيْبTake a look at the chart below. Take note of
+---
+نصب
+   مُسْ لِمات َ ْمُسْ لِمِي ِ ْ مُسْ لِمَي  مِلْسُم
+جر
+There are three forms of flexibility. They are: 
+1)
+fully-flexible ( )مُنَْصَ ِف/مُعْرَب
+2)
+partly-flexible ( ِ)مَمْنُوْعٌ مِن الَصَّ ْف
+3)
+non-flexible (  ِ )مَبْن
+We will discuss partly-flexible last, because it requires the most attention. 
+FULLY-FLEXIBLE (بَرْعُم/فِ ََصْنُ )مis the default state for a word. It is the broadest category. A fully-flexible
+---
+جر
+نصب
+رفع
+  عَدْن
+عَدْنًا ٌ عَدْن
+There are certain word patterns that are partly-flexible. We will look at these patterns in our study of 
+Sarf.  
+Note: In your vocabulary, partly flexible words will be denoted by having a single vowel ending, not a 
+ .تنوينFor now, as you memorize new vocabulary, make a note of which words are partly-flexible.
+➢ DRILL 5    Are the following words fully, partly, or non-flexible? Why?  
+REASON 
+FLEXIBILITY WORD
+REASON 
+FLEXIBILITY 
+WORD
+F / P / N
+---
+the differences between how the partly-flexible names and the fully-flexible names look in each status. 
+جر
+نصب
+رفع
+ َيُوْسُف َيُوْسُف ُيُوْسُف
+ َإِسْماعِيْل َإِسْماعِيْل ُإِسْماعِيْل
+ َإِبْراهِيْم َإِبْراهِيْم ُإِبْراهِيْم
+ َيَعْقُوْب َيَعْقُوْب ُيَعْقُوْب
+ َمَرْيَم َمَرْيَم ُمَرْيَم
+  ُمُ َمَّد
+ُمُ َمَّدًا ٌ ُمُ َمَّد
+  هُوْد
+هُوْدًا ٌ هُوْد
+  صالِح
+صاِلِ ًا ٌ صالِح
+  شُعَيْب
+شُعَيْبًا ٌ شُعَيْب
+>>>
+
+And here are the key points the student should recall:
+- Flexibility is a sub-category of status
+- Flexibility only pertains to singular words
+- Words may only be fully-flexible, partly-flexible, or non-flexible.
+
+The student wrote:
+""""""There are three types of flexibility in Arabic: fully-flexible, partly-flexible, and non-flexible.
+Certain words have different levels of flexibility, such as non-Arab names.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 60,\n  \""correct_points\"": [\n    \""Identified the three types of flexibility: fully-flexible, partly-flexible, and non-flexible.\"",\n    \""Correctly stated that non-Arab names are an example of a category of words with a specific flexibility type.\""\n  ],\n  \""incorrect_points\"": [],\n  \""missed_points\"": [\n    \""You did not mention that flexibility is a sub-category of status.\"",\n    \""You did not mention that flexibility only pertains to singular words.\""\n  ],\n  \""generated_feedback\"": \""You have correctly identified the three categories of flexibility and provided a good example. That's a great start! However, your answer is missing some crucial context. To make your understanding more complete, remember to include that flexibility is a sub-category of status and that this concept applies specifically to singular words. Reviewing the definition of what flexibility entails would be beneficial.\"",\n  \""rewritten_answer\"": \""Flexibility is a sub-category of status and it only applies to singular words. Words in Arabic can be one of three types: fully-flexible, partly-flexible, or non-flexible. Fully-flexible is the default for words. Partly-flexible words, such as non-Arab names, have some limitations on how they show status. Non-flexible words do not change their endings at all.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+Status 
+Ending Sound 
+رفع ٌمسلم
+نصب
+مسلمًا
+جر  مسلم
+To make a singular word feminine, just add a  ةto the end of the word. This makes the base for the
+feminine  .مسلمةThe status marker is the  .حركة
+Status 
+Ending Sound 
+رفع ٌمسلمَ ة
+نصب ًمسلمَ ة
+جر  مسلمَ ة
+***NOTE that when adding a  ةto any word, the letter before the  ةgets a  .فتحة
+11
+PAIR
+The base is  مسلمand everything beyond that is the status marker. Here, the  فتحةon the  مas well as the ان
+---
+word is a word that can show all three statuses in a normal way according to what we learned in the 
+ مسلمchart.
+Fully-Flexible Endings are: 
+( مسلمٌ  : رفعun) 
+( مسلمً ا : نصبan) 
+( مسلم   : جرin) 
+(3 Statuses have 3 Unique Endings)
+NON-FLEXIBLE (  ِنْبَ )مwords are the opposite of fully-flexible words. They can never show their status.
+This means that they look the same in the  رفعstatus, the  نصبstatus, and the  جرstatus. Words that end
+in لِف مَقْصُ وْرَة
+َ
+ أ
+---
+رفع ٌ مسلمَ ات
+نصب   مسلمَ ات
+جر  مسلمَ ات
+Notice that the  مgets a  فتحةin all the forms. Also notice that the  نصبand  جرforms are exactly the same.
+The way to distinguish between them is context. 
+Now that you are familiar with all of the status markers, you should be able to determine the status of a 
+word in Arabic. It is important to note that when determining status, you should ALWAYS look for ending 
+combinations BEFORE you look for ending sounds.
+---
+Remember that the حرف انلصبmakes the  اسمafter it  .نصبLet’s look back at the different ways the نصب
+status shows itself:
+Pronouns
+(Attached) 
+Ending 
+Combination 
+(Feminine 
+Plural) 
+Ending 
+Combination 
+(Masculine 
+Plural) 
+Ending 
+Combination 
+(Pair) 
+Ending 
+Sound 
+(Partly-
+Flexible) 
+Ending 
+Sound 
+(Non-
+Flexible) 
+Ending 
+Sound 
+(Fully 
+Flexible) 
+-
+ ُـه   مُسْ لِمات َ ْ مُسْ لِمِي ِ ْ مُسْ لِمَي َ يُوْسُف  مُوْسَ ى
+ مُسْ لِمًا
+نصب
+>>>
+
+And here are the key points the student should recall:
+- Singular words that end with a ضمة or ضمتان generally are الرفع.
+- Singular words that end with a كسرة or كسرتان generally are الجر.
+- Singular words that end with a فتحة or فتحتان generally are النصب.
+
+The student wrote:
+""""""Status is determined by the ending sound or combination. If the word has an ending sound of -u, it is raf', if it ends with -a, it is nasb, and if it ends with -i, it is jarr. This may be different based on the flexibility of the word (for example, the name موسى). 
+Words that end with -oona are raf', and those that end with -eena are either Nasb or Jarr.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 70,\n  \""correct_points\"": [\n    \""Status is determined by the ending sound or combination.\"",\n    \""For singular words, an ending sound of -u (ضمة) indicates الرفع, -a (فتحة) indicates النصب, and -i (كسرة) indicates الجر.\"",\n    \""The flexibility of a word can change how status is shown, as seen in non-flexible words like موسى.\"",\n    \""Words ending in -eena (ين) can be in the النصب or الجر status.\""\n  ],\n  \""incorrect_points\"": [\n    \""You stated that words ending in '-oona' are in الرفع status. While this is a rule in Arabic, it was not mentioned in the provided learning material.\""\n  ],\n  \""missed_points\"": [\n    \""You did not mention the most important rule: always check for ending combinations before looking for ending sounds.\"",\n    \""You missed the ending combination for pairs (ان for الرفع).\"",\n    \""You missed the ending combinations for feminine plurals (اتٌ for الرفع and اتٍ for النصب and الجر).\"",\n    \""You didn't mention partly-flexible words, which are another category besides fully-flexible and non-flexible.\""\n  ],\n  \""generated_feedback\"": \""Good job recognizing the basic ending sounds for singular words and understanding that word flexibility plays a role. You correctly identified the ending for masculine plural nasb/jarr. However, you missed some key details, like the endings for pairs and feminine plurals, and the existence of partly-flexible words. Most importantly, remember the rule from the text: always look for ending combinations *before* you look for ending sounds. Also, be careful to only use information provided in the lesson; the '-oona' ending for raf' was not covered here. A quick review of the different charts should clear this up!\"",\n  \""rewritten_answer\"": \""Status in Arabic is determined by a word's ending. It's crucial to always look for ending combinations before looking for ending sounds. For fully-flexible singular words, the ending sound is 'un' (ٌ) for الرفع, 'an' (ًا) for النصب, and 'in' (ٍ) for الجر. Ending combinations include those for pairs (e.g., 'aan' - ان for الرفع), feminine plurals ('aatun' - اتٌ for الرفع; 'aatin' - اتٍ for both النصب and الجر), and masculine plurals ('eena' - ين for النصب). The way a word shows status depends on its flexibility: fully-flexible words have three unique endings, partly-flexible words (like يوسف) have fewer, and non-flexible words (like موسى) always look the same regardless of status.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+رفع ٌ مسلمَ ات
+نصب   مسلمَ ات
+جر  مسلمَ ات
+Notice that the  مgets a  فتحةin all the forms. Also notice that the  نصبand  جرforms are exactly the same.
+The way to distinguish between them is context. 
+Now that you are familiar with all of the status markers, you should be able to determine the status of a 
+word in Arabic. It is important to note that when determining status, you should ALWAYS look for ending 
+combinations BEFORE you look for ending sounds.
+---
+The after-of is always in the    جَرstatus. The way you say “in the    جَرstatus” in Arabic is  ٌ .َمَ ْرُوْرMEMORIZE this 
+term and use it. 
+➢  DRILL 1    Determine the status of each  .اسمLabel them ( رفعR) or ( نصبN) or ( جرJ).
+The teacher entered the classroom. His student was sleeping soundly. He threw a pencil, and the 
+student woke up suddenly. The student’s mother called the teacher the next day and confronted him 
+angrily. The teacher lost his job. 
+2.2 HOW TO TELL STATUS
+---
+2.2 HOW TO TELL STATUS 
+In English, we were able to determine the status based on the meaning. In Arabic, however, status is 
+determined by a marker or sign at the end of the word.  
+As you know, there are three statuses in Arabic. There are, however, more than three status markers or 
+signs. In other words, there are more than three ways that the status of a word can show. This is 
+because each status can show in different ways depending on the number and the gender of the word.
+---
+Remember that the حرف انلصبmakes the  اسمafter it  .نصبLet’s look back at the different ways the نصب
+status shows itself:
+Pronouns
+(Attached) 
+Ending 
+Combination 
+(Feminine 
+Plural) 
+Ending 
+Combination 
+(Masculine 
+Plural) 
+Ending 
+Combination 
+(Pair) 
+Ending 
+Sound 
+(Partly-
+Flexible) 
+Ending 
+Sound 
+(Non-
+Flexible) 
+Ending 
+Sound 
+(Fully 
+Flexible) 
+-
+ ُـه   مُسْ لِمات َ ْ مُسْ لِمِي ِ ْ مُسْ لِمَي َ يُوْسُف  مُوْسَ ى
+ مُسْ لِمًا
+نصب
+>>>
+
+And here are the key points the student should recall:
+- Singular words that end with a ضمة or ضمتان generally are الرفع.
+- Singular words that end with a كسرة or كسرتان generally are الجر.
+- Singular words that end with a فتحة or فتحتان generally are النصب.
+
+The student wrote:
+""""""There are 3 main statuses in Arabic, Raf', Nasb, and Jarr.
+Raf' is used after a harf nasb
+Nasb is used after a harf nasb
+Jarr is used after a preposition or for a mudaf ilayh.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 40,\n  \""correct_points\"": [\n    \""There are 3 main statuses in Arabic, Raf', Nasb, and Jarr.\"",\n    \""Nasb is used after a harf nasb.\"",\n    \""Jarr is used for a mudaf ilayh (the 'after-of').\""\n  ],\n  \""incorrect_points\"": [\n    \""You incorrectly stated that Raf' is used after a harf nasb; it is the Nasb status that is used in this case.\""\n  ],\n  \""missed_points\"": [\n    \""You missed the most important part of the lesson, which is how to identify a word's status by its ending sound or ending combination.\"",\n    \""You did not mention the specific ending sounds for singular words: a dammah for Raf', a fatha for Nasb, and a kasra for Jarr.\"",\n    \""You did not mention the key principle that one should always look for ending combinations before looking for ending sounds.\""\n  ],\n  \""generated_feedback\"": \""You've correctly identified the three statuses and some of the reasons for them, which is a good start. However, you confused the reason for Raf' with Nasb. The most important thing you missed from the lesson is *how* to identify these statuses by looking at the endings of words. The lesson explains that status is shown by ending sounds (like dammah for Raf') or ending combinations (like for plurals). Please review this part of the lesson, as it's the key to determining status.\"",\n  \""rewritten_answer\"": \""There are three main statuses in Arabic: الرفع (Raf'), النصب (Nasb), and الجر (Jarr). We determine a word's status by its ending. You should always look for ending combinations first, then ending sounds. For singular, fully flexible words, Raf' is generally indicated by a ضمة or ضمتان, Nasb by a فتحة or فتحتان, and Jarr by a كسرة or كسرتان. The النصب status is used for a noun after a حرف نصب. The الجر status is used for a noun that is 'after-of' (the مضاف إليه).\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+combination. These words are considered heavy. HEAVY is the DEFAULT. To make a word light, all you 
+have to do is remove the ‘n’ sound at the end.  
+Plural 
+Pair 
+Singular 
+muslimoo na 
+muslimaa ni 
+muslimu n  رفع
+muslimee na 
+muslimay ni 
+muslima n نصب
+muslimee na 
+muslimay ni 
+muslimi n جر
+Plural 
+Pair 
+Singular 
+muslimaatu n 
+muslimataa ni 
+muslimatu n  رفع
+muslimaati n 
+muslimatay ni 
+muslimata n نصب
+muslimaati n 
+muslimatay ni 
+muslimati n جر
+---
+*Note that the discussion of heavy and light becomes irrelevant when the word has an  الon it. This is
+because  تنوينand  الNEVER come together. For example, the word  ٌ املسلمis incorrect. You can only say
+ ُ .املسلمThe words that end in  ,نon the other hand, keep their  نeven when there is an  الon the word.
+The word  املسلمونis correct; there is no need to drop the   .ن
+➢ DRILL 4    Are the following words light, heavy, or irrelevant? 
+LIGHT, HEAVY, OR IRRELEVANT 
+WORD
+---
+الفعل
+ 
+المضارع
+ 
+المؤكد
+ 
+To add one level of emphasis to a  ,فعل مضارعone  نis added to the end of the  .فعلThis is known as  نون
+( التوكيد الخفيفةthe light  نونof emphasis). 
+To add two levels of emphasis to a  ,فعل مضارعtwo  نونare added. This is known as ( نون التوكيد الثقيلةthe 
+heavy  نونof emphasis).  
+The light  نونof emphasis only occurs twice in the Quran, while the heavy  نونof emphasis occurs 
+countless times. For this reason, we will focus on that.
+---
+ي شُ كُّوْا َّ ي شُ َّك َّ ي شُ ك
+   ي شْكُكْن َّ ت شُ َّك َّ ت شُ ك
+ ت شُ كُّوْا َّ ت شُ َّك َّ ت شُ ك
+   ت شْكُكْن َّ ت شُ َّك ْ ِ
+  ت شُ ك
+ َّ ن شُ ك 
+ َّشُك
+ 
+ أ
+LIGHTEST 
+To make a  فعلّمضارعّمضاعفlightest ( )مزومuse the following rules: 
+1) If the  فعلends in a  ُ ,ـthere are three versions (the same versions we learned in the  أمرand  :)نيه
+ )ـَّ ( )ـِ  (and splitting the  شدة
+2) If the  فعلends in a  نget rid of the  ن
+Take a look at the chart below. 
+  فعل مضارع جمزوم
+>>>
+
+And here are the key points the student should recall:
+- Words are heavy by default
+- To make a word light, they ن must be removed.Words are never light unless there is a specific reason for them to be.
+
+The student wrote:
+""""""Words by default are heavy. In order to make a word light, the ن at the end must be removed.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n\""score\"": 85,\n\""correct_points\"": [\n\""Words by default are heavy.\"",\n\""In order to make a word light, the ن at the end must be removed.\""\n],\n\""incorrect_points\"": [],\n\""missed_points\"": [\n\""You did not mention that words are only made light for a specific reason.\""\n],\n\""generated_feedback\"": \""Excellent work! You've correctly recalled the default state of words and the mechanical process for making them light. The one crucial point you missed is that this change only happens for a specific grammatical reason. Keep that in mind, and you'll have a complete picture of the concept.\"",\n\""rewritten_answer\"": \""Words are heavy by default. To make a word light, the ن sound at the end of the word must be removed. Words are never light unless there is a specific reason for them to be.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+.نائبُالفاعلThough the roles differ, the grammatical rules of the  نائب الفاعلare exactly the same as the 
+rules of the  .فاعلLet us refresh. 
+There are two types of  :نائبُالفاعل
+1)
+Inside ( َ – )ضمب  مستبif the done-to is a pronoun 
+2)
+Outside – if the done-to is other than a pronoun
+107
+When the  نائبُالفاعلis outside: 
+1)
+It must come AFTER the فعل
+2)
+The  فعلmust be in the  هوor  ِ هform
+3)
+It must be مرفوع
+---
+- 
+The  فعلٌمضارعin the  رشطis   .جمزوم
+- 
+There is a ٌ َ فon the  .جوابٌالشطNotice that the  جوابis a   .مجلةٌاسمية
+ 
+ – مَ نٌْWHOEVER  
+- 
+Note that this ٌْ مَنis different than the  .مَنٌْمَوْصُ وْلَةIt is not an  اسمthat can play any role in a 
+sentence. It is a tool used to create a conditional statement.  
+ 
+...وَمَن
+ٌ
+يَكۡفُرٌۡأَ‍ِب
+يَ َٰتِ ٌ
+ٱّللذ ٌِ
+ٌ
+فَإِنذٌ
+ٱّللذ ٌَ
+ٌ
+َسَ ِيعٌُ
+ِسَ ابٌِ
+ٱۡلۡ
+ٌ ٩١ ٌ
+---
+contains a  ,فعلُناقصTHE  خبرIS  .منصوبContrast this with an ordinary  جملةُاسميةwhere the  خبرis  .مرفوع
+As for the  ,متعلقُبالخبرthe rules are the same. It is made up of either a  جارُومجرورor a  .ظرف
+As is the case with an ordinary  ,جملةُاسميةa sentence only requires one of the two to be considered 
+complete as is the case with a normal  .جملةُاسمية
+Take a look at the following examples. 
+ َوَكانَ وَ عْ دُ ر
+ ب ِِ 
+حَ قًّ ا
+.
+true
+ 
+The promise of My master was
+ ِوَكانَ عَرْشُ هُ  عَل الماء
+---
+two examples, the word  رجُلhas a standard compound  صفةin which a  مجلة فعليةis describing it.  
+The second example is similar to the first. There is, however, one key difference. Recall from our  رصف
+studies that some  أسماءcan act like a  فعلin that they can take a  مفعول بهor a  .فاعلIn this case, the  اسم فاعل
+ )متسخة(replaces and functions like the  .)اتسخت( فعلThe word following it ( )مالبسهis still its   .فاعل
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""Raf' is used for the subject, خبر and فاعل.
+Nasb is used after a حرف نصب and for a مفعول
+Jarr is used after a حرف جر and for a مضاف إليه""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 100,\n  \""correct_points\"": [\n    \""You correctly stated that Raf' is used for the subject, predicate (خبر), and doer (فاعل).\"",\n    \""You correctly identified that Nasb is used for the object (مفعول) and after a حرف نصب.\"",\n    \""You correctly stated that Jarr is used after a preposition (حرف جر).\"",\n    \""You also correctly mentioned that Jarr is used for the مضاف إليه.\""\n  ],\n  \""incorrect_points\"": [],\n  \""missed_points\"": [],\n  \""generated_feedback\"": \""Excellent work! You've perfectly recalled all the key uses for الرفع, النصب, and الجر that were required. Your inclusion of the مضاف إليه as a use for الجر shows a fantastic and deep understanding of Arabic grammar. Your answer is complete and accurate. Keep up the great work!\"",\n  \""rewritten_answer\"": \""The three primary grammatical cases are الرفع, النصب, and الجر. الرفع (the nominative case) is used for the subject, the predicate (خبر), and the doer (فاعل). النصب (the accusative case) is used for the object of the verb (مفعول به) and after particles that induce this case (حروف النصب). الجر (the genitive case) is used for nouns that follow a preposition (حرف جر) and for the second part of a possessive phrase (مضاف إليه).\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+flexible words as you are exposed to more vocabulary.  However, there are a few categories of partly-
+flexible words we can familiarize ourselves with to make identification of partly-flexible words easier.  
+A. NON-ARAB NAMES
+Non-Arab names are partly-flexible. Arab names are fully-flexible. There are four Arab prophet’s names 
+mentioned in the Quran. They are:  ٌ ,صالِحٌ  ,هُوْدٌ  ,ُمُ َمَّدand  ٌ .شُ عَيْبTake a look at the chart below. Take note of
+---
+نصب
+   مُسْ لِمات َ ْمُسْ لِمِي ِ ْ مُسْ لِمَي  مِلْسُم
+جر
+There are three forms of flexibility. They are: 
+1)
+fully-flexible ( )مُنَْصَ ِف/مُعْرَب
+2)
+partly-flexible ( ِ)مَمْنُوْعٌ مِن الَصَّ ْف
+3)
+non-flexible (  ِ )مَبْن
+We will discuss partly-flexible last, because it requires the most attention. 
+FULLY-FLEXIBLE (بَرْعُم/فِ ََصْنُ )مis the default state for a word. It is the broadest category. A fully-flexible
+---
+word is a word that can show all three statuses in a normal way according to what we learned in the 
+ مسلمchart.
+Fully-Flexible Endings are: 
+( مسلمٌ  : رفعun) 
+( مسلمً ا : نصبan) 
+( مسلم   : جرin) 
+(3 Statuses have 3 Unique Endings)
+NON-FLEXIBLE (  ِنْبَ )مwords are the opposite of fully-flexible words. They can never show their status.
+This means that they look the same in the  رفعstatus, the  نصبstatus, and the  جرstatus. Words that end
+in لِف مَقْصُ وْرَة
+َ
+ أ
+---
+جر
+نصب
+رفع
+  عَدْن
+عَدْنًا ٌ عَدْن
+There are certain word patterns that are partly-flexible. We will look at these patterns in our study of 
+Sarf.  
+Note: In your vocabulary, partly flexible words will be denoted by having a single vowel ending, not a 
+ .تنوينFor now, as you memorize new vocabulary, make a note of which words are partly-flexible.
+➢ DRILL 5    Are the following words fully, partly, or non-flexible? Why?  
+REASON 
+FLEXIBILITY WORD
+REASON 
+FLEXIBILITY 
+WORD
+F / P / N
+>>>
+
+And here are the key points the student should recall:
+- Flexibility is a sub-category of status
+- Flexibility only pertains to singular words
+- Words may only be fully-flexible, partly-flexible, or non-flexible.
+
+The student wrote:
+""""""There are 3 types of words in Arabic, fully-flexible, partly-flexible, and non-flexible. """"""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 40,\n  \""correct_points\"": [\n    \""You correctly identified the three types of flexibility: fully-flexible, partly-flexible, and non-flexible.\""\n  ],\n  \""incorrect_points\"": [\n    \""You stated that these are '3 types of words in Arabic', which is imprecise. Flexibility is more accurately described as a sub-category of status, which is a property of words.\""\n  ],\n  \""missed_points\"": [\n    \""You did not mention that flexibility is a sub-category of status.\"",\n    \""You did not mention that flexibility only pertains to singular words.\""\n  ],\n  \""generated_feedback\"": \""You've correctly recalled the names for the three types of flexibility, which is a good start. The key thing to focus on now is what flexibility actually is. It's not a primary classification of all words, but a property related to a word's grammatical status, and it specifically applies to singular words. A quick review of the lesson will help solidify this concept.\"",\n  \""rewritten_answer\"": \""Flexibility is a sub-category of status that pertains to singular words. There are three types of flexibility: fully-flexible (a word that shows all three statuses distinctly), partly-flexible, and non-flexible (a word that looks the same regardless of status).\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+It is important to keep in mind that whenever you are trying to figure out the status of an Ism you must 
+look at the ending of the word. There are two types of endings we will see, ending sounds (vowel 
+change at the end) and ending combinations (letters added to the end of a word). 
+The number/gender variations are singular, pair, masculine plural, and feminine plural.  Take a look at 
+the charts below. Notice how each status looks different depending on the number and the gender of
+---
+make up the status marker. We call this an ENDING COMBINATION because it is made up of more than a 
+single  .حركة
+Status 
+Ending Combination 
+رفع ِمسلمَ ان
+نصب ِ ْمسلمَ ي
+جر ِ ْمسلمَ ي
+Notice that the  نصبand  جرforms are exactly the same. The way to distinguish between them is context.
+By the time we complete our study of fragments and sentences, you will easily be able to distinguish 
+between the  نصبand  جرforms.
+---
+رفع ٌ مسلمَ ات
+نصب   مسلمَ ات
+جر  مسلمَ ات
+Notice that the  مgets a  فتحةin all the forms. Also notice that the  نصبand  جرforms are exactly the same.
+The way to distinguish between them is context. 
+Now that you are familiar with all of the status markers, you should be able to determine the status of a 
+word in Arabic. It is important to note that when determining status, you should ALWAYS look for ending 
+combinations BEFORE you look for ending sounds.
+---
+MASCULINE  
+In the plural masculine form, the status is determined by an ending combination just as it is in the pair 
+form. The combination is made up of two letters that attach to the end of the word.  
+Status 
+Ending Combination 
+12
+رفع َمسلمُ وْن
+نصب َ ْمسلمِ ي
+جر َ ْمسلمِ ي
+Notice that word  مسلمremains the same throughout. The ending combination acts as an add-on and
+does not change the make-up of the word. Notice that the last letter in the word, the  ,مgets a  ضمةin the
+>>>
+
+And here are the key points the student should recall:
+- Singular words that end with a ضمة or ضمتان generally are الرفع.
+- Singular words that end with a كسرة or كسرتان generally are الجر.
+- Singular words that end with a فتحة or فتحتان generally are النصب.
+
+The student wrote:
+""""""Status is determined by the ending sound, never by the ending combination.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 20,\n  \""correct_points\"": [\n    \""Status can be determined by the ending sound of a word.\""\n  ],\n  \""incorrect_points\"": [\n    \""You incorrectly stated that status is 'never' determined by an ending combination. The text shows that pairs and plurals use ending combinations to show status.\""\n  ],\n  \""missed_points\"": [\n    \""You missed that status for pairs and plurals is shown by ending combinations.\"",\n    \""You did not mention the key rule that one should always look for ending combinations BEFORE looking for ending sounds.\""\n  ],\n  \""generated_feedback\"": \""You've correctly identified that ending sounds are one way to determine the status of a word. However, your answer makes a significant error by stating that ending combinations are never used. The provided text shows that ending combinations are crucial for determining the status of pairs and plurals. It also provides an important rule: always check for ending combinations before you check for ending sounds. Please review the lesson material on pairs and plurals.\"",\n  \""rewritten_answer\"": \""The status of a word in Arabic is determined by its ending. There are two types of endings: ending sounds (vowels) and ending combinations (letters added to the end). For singular words, status is generally shown by ending sounds: a ضمة indicates الرفع, a فتحة indicates النصب, and a كسرة indicates الجر. For pairs and plurals, status is shown by ending combinations. When determining status, you must always look for ending combinations before looking for ending sounds.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+*Note that the discussion of heavy and light becomes irrelevant when the word has an  الon it. This is
+because  تنوينand  الNEVER come together. For example, the word  ٌ املسلمis incorrect. You can only say
+ ُ .املسلمThe words that end in  ,نon the other hand, keep their  نeven when there is an  الon the word.
+The word  املسلمونis correct; there is no need to drop the   .ن
+➢ DRILL 4    Are the following words light, heavy, or irrelevant? 
+LIGHT, HEAVY, OR IRRELEVANT 
+WORD
+---
+combination. These words are considered heavy. HEAVY is the DEFAULT. To make a word light, all you 
+have to do is remove the ‘n’ sound at the end.  
+Plural 
+Pair 
+Singular 
+muslimoo na 
+muslimaa ni 
+muslimu n  رفع
+muslimee na 
+muslimay ni 
+muslima n نصب
+muslimee na 
+muslimay ni 
+muslimi n جر
+Plural 
+Pair 
+Singular 
+muslimaatu n 
+muslimataa ni 
+muslimatu n  رفع
+muslimaati n 
+muslimatay ni 
+muslimata n نصب
+muslimaati n 
+muslimatay ni 
+muslimati n جر
+---
+مُسْ لِمُو مَكَّةَ 
+the Muslims of Mecca 
+Recall that there are very few reasons to make something light. If you see an  اسمthat is light with no ال
+followed directly by another  ,اسمchances are it is an  ,إضافةeven if you cannot be completely sure that
+the word after it is in the  جرstatus.  This is the second of two reasons for a word to be in  جرstatus.
+You may also recall that the  إضافةconstruction was referenced in passing a few times in previous chapters.
+---
+English, the adjective comes before the noun.  
+Grammatically, a  موصوفmust match with its  صفةin all four properties.
+ ًقَوْالً ثَقِيْال
+A heavy word 
+الطَّ امَّةُ الكُْبْ ى
+The biggest calamity 
+ ٌَحُ ُرٌ مُسْتَنْفِرَة
+Alarmed donkeys 
+الموصوف
+Status: نصب
+Number: singular 
+Gender: masculine 
+Type: common 
+الصفة
+Status: نصب
+Number: singular 
+Gender: masculine 
+Type: common 
+الموصوف
+Status: رفع
+Number: singular 
+Gender: feminine 
+Type: proper 
+الموصوف
+Status: رفع
+Number: singular
+>>>
+
+And here are the key points the student should recall:
+- Words are heavy by default
+- To make a word light, they ن must be removed.Words are never light unless there is a specific reason for them to be.
+
+The student wrote:
+""""""Words are never light unless there is a reason for them to be. By default words are heavy.
+An example of a heavy word is مؤمنون. The light for is مؤمنو.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 75,\n  \""correct_points\"": [\n    \""Words are heavy by default.\"",\n    \""Words are never light unless there is a specific reason for them to be.\"",\n    \""Correctly identified that to make a word like مؤمنون light, the ن is removed to make it مؤمنو.\""\n  ],\n  \""incorrect_points\"": [],\n  \""missed_points\"": [\n    \""You did not mention the key reason for a word to become light, which is the إضافة (idhafa) construction.\"",\n    \""You missed the point that the discussion of heavy versus light is irrelevant when a word has the definite article ال.\""\n  ],\n  \""generated_feedback\"": \""Excellent work! You've correctly identified the default state of words as heavy and accurately demonstrated how to make a plural word light by removing the final 'n'. To make your understanding more complete, try to also remember the specific reasons a word becomes light, such as the إضافة (idhafa) construction. Also, keep in mind the rule that the heavy/light concept doesn't apply to words with 'ال' (the definite article).\"",\n  \""rewritten_answer\"": \""By default, words are considered heavy. A word is never light unless there is a specific reason for it to be, such as being the first word in an إضافة (idhafa) construction (e.g., مُسْلِمُو مَكَّةَ). To make a word light, the 'n' sound at the end is removed. For example, the heavy plural word مُسْلِمُوْنَ becomes the light form مُسْلِمُوْ. It is also important to note that the discussion of heavy and light becomes irrelevant when a word has ال on it, because تنوين and ال can never be on the same word.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+3)
+Every  ماضlooks the same regardless of the clan – they all follow the pattern  َّف ل
+4)
+In the  ,مضارعthe  حركةthat usually goes on the SECOND root letter is TRANSFERRED to the FIRST root
+letter
+---
+the word  .قالIn the examples above, ذَّنَ  ,نادَي
+َ
+ ,أand  َرْسَل
+َ
+ أare used. This allows for a wider variety in 
+expression.  
+ 
+5.1E 
+ َّن
+َ
+أ
+ 
+الم خَ فَّ فَ ة
+ 
+ أنَّ differs from  ْن
+َ
+ أin that it only affects أسم
+اء
+ .Generally,  ْن
+َ
+ أtranslates as “to” and  َّن
+َ
+ أtranslates as “that”. 
+There are some cases in which you may see AN  ْن
+َ
+ أTHAT IS ACTUALLY JUST  َّ أنWITHOUT A  شدِّةOR AN  .اسمThis is  
+22
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+---
+َال رَ يْب
+ 
+فِ يْهِ 
+There is absolutely no doubt in it.
+In terms of labeling, the  الُالنافيةalong with the  اسمthat follows it ( )اسم ُالmake up the  .مبتدأThe  جارُومجرور
+that follows is the  .متعلقُبالخبر
+ الُالنافيةُللجنسis the third reason to make an  اسمlight. Recall that the first two reasons were  مضافand 
+partly-flexible words. 
+Know that if the  اسمthat follows is  مرفوعand heavy, the  الis not  .نافيةُللجنسRather, it is a regular  الُنافيةand 
+there is room for exception.
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""The three cases in Arabic are Raf', Nasb, and Jarr.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 30,\n  \""correct_points\"": [\n    \""You correctly identified the names of the three cases in Arabic: Raf', Nasb, and Jarr.\""\n  ],\n  \""incorrect_points\"": [],\n  \""missed_points\"": [\n    \""You did not mention the primary uses of الرفع (subject, predicate, and doer).\"",\n    \""You did not mention the primary uses of النصب (done-to and after حروف which trigger its use).\"",\n    \""You did not mention the primary use of الجر (after prepositions).\""\n  ],\n  \""generated_feedback\"": \""You have correctly identified the names of the three cases, which is a good first step. However, you missed the main point of the exercise, which was to explain the function of each case. It's crucial to know not just their names, but when and why they are used. Please review the material on the grammatical roles associated with each case.\"",\n  \""rewritten_answer\"": \""The three cases in Arabic are الرفع (Raf'), النصب (Nasb), and الجر (Jarr). الرفع is primarily used for the subject, predicate, and doer. النصب is primarily used for the done-to (object of the verb) and after certain particles (حروف) that trigger its use. الجر is primarily used for nouns that come after prepositions.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+7. 
+ ُسَ يُصِ يْب3. 
+ َالسَّ ائِل
+8. نْ يِْتَ اجَعا
+َ
+أ4. 
+ َفْلَح
+َ
+قَدْ أ
+9. 
+ ْف قُلُوْبِهِم
+ 5. 
+ َ ْإِنَّ المُنافِقِي
+ 
+96
+SENTENCES
+اجلملة
+االسمية
+مبتدأ
+Can be:
+-a single word in
+رفع
+-a fragment
+-almost always
+proper!
+خْب
+Can be: 
+-a single word in
+رفع
+-a fragment
+-a full sentence
+متعلق
+باخلْب
+Can be: 
+-aجار وَمرور
+OR
+-a special مضاف
+اجلملة
+الفعلية
+فعل
+ماض
+the past tense
+check endings!
+مضارع
+the present tense
+check endings AND 
+beginnings!
+نه / أمر
+imperative action
+فاعل
+inside فاعل
+---
+the word  .قالIn the examples above, ذَّنَ  ,نادَي
+َ
+ ,أand  َرْسَل
+َ
+ أare used. This allows for a wider variety in 
+expression.  
+ 
+5.1E 
+ َّن
+َ
+أ
+ 
+الم خَ فَّ فَ ة
+ 
+ أنَّ differs from  ْن
+َ
+ أin that it only affects أسم
+اء
+ .Generally,  ْن
+َ
+ أtranslates as “to” and  َّن
+َ
+ أtranslates as “that”. 
+There are some cases in which you may see AN  ْن
+َ
+ أTHAT IS ACTUALLY JUST  َّ أنWITHOUT A  شدِّةOR AN  .اسمThis is  
+22
+---
+two examples, the word  رجُلhas a standard compound  صفةin which a  مجلة فعليةis describing it.  
+The second example is similar to the first. There is, however, one key difference. Recall from our  رصف
+studies that some  أسماءcan act like a  فعلin that they can take a  مفعول بهor a  .فاعلIn this case, the  اسم فاعل
+ )متسخة(replaces and functions like the  .)اتسخت( فعلThe word following it ( )مالبسهis still its   .فاعل
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""There are 3 cases in Arabic. The first case is raf', the second is jarr, and the third is nasb.
+Raf' is used for the subject, predicate, and doer.
+Nasb is used for the done-to and after harf nasb.
+Jarr is never used except in rare situations.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 65,\n  \""correct_points\"": [\n    \""You correctly identified that there are 3 cases in Arabic.\"",\n    \""You correctly stated that الرفع is used for the subject, predicate, and doer.\"",\n    \""You correctly stated that النصب is used for the done-to and after harf nasb.\""\n  ],\n  \""incorrect_points\"": [\n    \""You incorrectly stated that 'Jarr is never used except in rare situations'.\""\n  ],\n  \""missed_points\"": [\n    \""You did not mention the primary use of the الجر case, which is that it's used after prepositions.\""\n  ],\n  \""generated_feedback\"": \""You've done a great job identifying the three cases and have a perfect understanding of الرفع and النصب. Your main area for improvement is with the الجر case. You mistakenly said it's rare, but it's actually very common and is used primarily after prepositions, as mentioned with 'جار وَمرور' in the text. A quick review of that specific rule will complete your understanding of this topic.\"",\n  \""rewritten_answer\"": \""There are three primary grammatical cases in Arabic: الرفع (raf'), النصب (nasb), and الجر (jarr). الرفع is used for the subject, the predicate, and the doer. النصب is used for the done-to (object) and after certain particles (حروف) that trigger it. الجر is used for a noun that comes after a preposition.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+3)
+Every  ماضlooks the same regardless of the clan – they all follow the pattern  َّف ل
+4)
+In the  ,مضارعthe  حركةthat usually goes on the SECOND root letter is TRANSFERRED to the FIRST root
+letter
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+---
+أ
+َس  َّت ا
+ 
+ أ َْس  َّت
+ 
+أ
+   تُرسِ ُّوْن ِ تُرسِ َّان ُّ ِتُرس َْسْ رْتُم
+ 
+َسْ رْتُما أ
+ 
+ أ  َسْ رْت
+ 
+أ
+   تُرسْ ِرْن ِ تُرسِ َّان  تُرسِ ِيْن ََّسْ رْتُن
+ 
+َسْ رْتُما أ
+ 
+ أ َِسْ رْت
+ 
+أ
+ ُّ ِنُرس ُّ َِس
+ُ
+أ
+َسْ رْنا
+ 
+ أ َُسْ رْت
+ 
+ أ
+65
+7.3 مضاعفIN جمرد FAMILIES
+الصف
+ّ
+الصغْي
+When it comes to  رصفّصغْيof ّ مضاعفّمردwords, remember the following four rules:
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+---
+الصف
+ّ
+الصغْي
+ 
+The rules of  رصفّصغْيin  ناقصare divided into general rules and family-specific rules.  
+GENERAL RULES 
+1) The  ماضalways ends in an  )ألفّمقصورة( ى
+2) The  مضارعends in a  )ياء( ي
+a. The only exception to this is the  فتحةfamilies (َّ تَعَلَّمand َّ ,)تَعَاوَنwhich end in an   ى
+3) The  اسمّفاعلalways ends in a ّ ( ـto represent the  كرسةof the  )اسمّفاعل
+4) The  اسمّمفعولalways ends in a ًّ( ىto represent the  فتحةof the   )اسمّفاعل
+FAMILY-SPECIFIC RULES
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""In Arabic there are 3 cases. The first case is raf', the second case is jarr, the third is nasb.
+Raf' is used for the doer.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n\""score\"": 30,\n\""correct_points\"": [\n\""Identified that there are 3 cases in Arabic.\"",\n\""Correctly stated that الرفع (raf') is used for the doer.\""\n],\n\""incorrect_points\"": [],\n\""missed_points\"": [\n\""Did not mention the other uses for الرفع (subject and predicate).\"",\n\""Did not mention any uses for النصب (done-to and after حروف which trigger its use).\"",\n\""Did not mention any uses for الجر (after prepositions).\""\n],\n\""generated_feedback\"": \""Good job identifying that there are three cases in Arabic and recalling one of the uses for الرفع. However, your answer is missing the uses for the other two cases, النصب and الجر, as well as the other primary uses for الرفع. Please review the material again, paying close attention to what each case is used for.\"",\n\""rewritten_answer\"": \""In Arabic, there are three grammatical cases: الرفع (raf'), النصب (nasb), and الجر (jarr). الرفع is primarily used for the subject of a sentence, the predicate, and the doer. النصب is used for the object of the verb (the done-to) and after certain particles (حروف) that trigger it. الجر is used for nouns that come after prepositions.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+3)
+Every  ماضlooks the same regardless of the clan – they all follow the pattern  َّف ل
+4)
+In the  ,مضارعthe  حركةthat usually goes on the SECOND root letter is TRANSFERRED to the FIRST root
+letter
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+---
+الصف
+ّ
+الصغْي
+ 
+The rules of  رصفّصغْيin  ناقصare divided into general rules and family-specific rules.  
+GENERAL RULES 
+1) The  ماضalways ends in an  )ألفّمقصورة( ى
+2) The  مضارعends in a  )ياء( ي
+a. The only exception to this is the  فتحةfamilies (َّ تَعَلَّمand َّ ,)تَعَاوَنwhich end in an   ى
+3) The  اسمّفاعلalways ends in a ّ ( ـto represent the  كرسةof the  )اسمّفاعل
+4) The  اسمّمفعولalways ends in a ًّ( ىto represent the  فتحةof the   )اسمّفاعل
+FAMILY-SPECIFIC RULES
+---
+أ
+َس  َّت ا
+ 
+ أ َْس  َّت
+ 
+أ
+   تُرسِ ُّوْن ِ تُرسِ َّان ُّ ِتُرس َْسْ رْتُم
+ 
+َسْ رْتُما أ
+ 
+ أ  َسْ رْت
+ 
+أ
+   تُرسْ ِرْن ِ تُرسِ َّان  تُرسِ ِيْن ََّسْ رْتُن
+ 
+َسْ رْتُما أ
+ 
+ أ َِسْ رْت
+ 
+أ
+ ُّ ِنُرس ُّ َِس
+ُ
+أ
+َسْ رْنا
+ 
+ أ َُسْ رْت
+ 
+ أ
+65
+7.3 مضاعفIN جمرد FAMILIES
+الصف
+ّ
+الصغْي
+When it comes to  رصفّصغْيof ّ مضاعفّمردwords, remember the following four rules:
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""In Arabic there are 3 cases. The first case is raf', the second case is jarr, the third is nasb.
+Raf' is used for the doer.
+Nasb is also used for the doer.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 35,\n  \""correct_points\"": [\n    \""You correctly identified that there are three cases in Arabic: raf', nasb, and jarr.\"",\n    \""You correctly stated that Raf' is used for the doer.\""\n  ],\n  \""incorrect_points\"": [\n    \""You incorrectly stated that Nasb is used for the doer. Raf' is used for the doer.\""\n  ],\n  \""missed_points\"": [\n    \""You did not mention the other uses for Raf': the subject and the predicate.\"",\n    \""You missed the primary uses for Nasb, which are for the done-to (object of the verb) and after certain particles (حروف).\"",\n    \""You did not mention the use for Jarr, which is used after prepositions.\""\n  ],\n  \""generated_feedback\"": \""Great job identifying the three cases in Arabic! You correctly noted one of the uses for الرفع. However, you confused the use of النصب with الرفع. Remember that النصب is for the object (the done-to), not the doer. You also missed the function of الجر entirely. A quick review of the key points for each case will help solidify your understanding. You've got the basics, now just focus on the details of their application!\"",\n  \""rewritten_answer\"": \""In Arabic, there are three grammatical cases: الرفع (al-raf'), النصب (al-nasb), and الجر (al-jarr). الرفع is primarily used for the subject, the predicate, and the doer. النصب is primarily used for the done-to (the object of the action) and after specific particles (حروف) that trigger its use. الجر is primarily used for nouns that come after prepositions.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+نصب
+   مُسْ لِمات َ ْمُسْ لِمِي ِ ْ مُسْ لِمَي  مِلْسُم
+جر
+There are three forms of flexibility. They are: 
+1)
+fully-flexible ( )مُنَْصَ ِف/مُعْرَب
+2)
+partly-flexible ( ِ)مَمْنُوْعٌ مِن الَصَّ ْف
+3)
+non-flexible (  ِ )مَبْن
+We will discuss partly-flexible last, because it requires the most attention. 
+FULLY-FLEXIBLE (بَرْعُم/فِ ََصْنُ )مis the default state for a word. It is the broadest category. A fully-flexible
+---
+word is a word that can show all three statuses in a normal way according to what we learned in the 
+ مسلمchart.
+Fully-Flexible Endings are: 
+( مسلمٌ  : رفعun) 
+( مسلمً ا : نصبan) 
+( مسلم   : جرin) 
+(3 Statuses have 3 Unique Endings)
+NON-FLEXIBLE (  ِنْبَ )مwords are the opposite of fully-flexible words. They can never show their status.
+This means that they look the same in the  رفعstatus, the  نصبstatus, and the  جرstatus. Words that end
+in لِف مَقْصُ وْرَة
+َ
+ أ
+---
+flexible words as you are exposed to more vocabulary.  However, there are a few categories of partly-
+flexible words we can familiarize ourselves with to make identification of partly-flexible words easier.  
+A. NON-ARAB NAMES
+Non-Arab names are partly-flexible. Arab names are fully-flexible. There are four Arab prophet’s names 
+mentioned in the Quran. They are:  ٌ ,صالِحٌ  ,هُوْدٌ  ,ُمُ َمَّدand  ٌ .شُ عَيْبTake a look at the chart below. Take note of
+---
+flexible word can only take a  ضمةand a  .فتحةA partly-flexible word can also never take  .تَنْوِيْنThis type of
+word takes a single  ضمةin the  رفعform, a single  فتحةin the  نصبform, and a single  فتحةin the  جرform.
+Partly-Flexible Endings are: 
+: رفع
+ 
+(  يُوْسُ فُ u)
+: نصب
+ 
+(  يُوْسُ فَ a)
+( يُوْسُ فَ  : جرa)
+Notice that  نصبand  جرlook the same. We have seen this problem before in ending
+combinations. 
+(3 Statuses have 2 Endings)
+>>>
+
+And here are the key points the student should recall:
+- Flexibility is a sub-category of status
+- Flexibility only pertains to singular words
+- Words may only be fully-flexible, partly-flexible, or non-flexible.
+
+The student wrote:
+""""""There are 3 types of flexibility in Arabic, non-flexible, partly-flexible, and fully-flexible. 
+Non flexible words don't show their status by their ending sound.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 50,\n  \""correct_points\"": [\n    \""There are three types of flexibility: non-flexible, partly-flexible, and fully-flexible.\"",\n    \""Non-flexible words don't show their status by their ending sound.\""\n  ],\n  \""incorrect_points\"": [],\n  \""missed_points\"": [\n    \""You did not define fully-flexible words.\"",\n    \""You did not define partly-flexible words.\"",\n    \""You did not mention that flexibility is a sub-category of status.\"",\n    \""You did not mention that flexibility only pertains to singular words.\""\n  ],\n  \""generated_feedback\"": \""You've correctly identified the three types of flexibility and have a good understanding of what non-flexible means. However, your answer is missing the definitions for fully-flexible and partly-flexible words, as well as the key concepts that flexibility is a sub-category of status and that it applies to singular words. Review the lesson again to capture these important details.\"",\n  \""rewritten_answer\"": \""Flexibility is a sub-category of status that pertains to singular words. Words can be one of three types: fully-flexible, partly-flexible, or non-flexible. Fully-flexible words show all three statuses with three unique endings. Partly-flexible words have only two endings for the three statuses, taking a dammah in the raf' case and a fathah in both the nasb and jar cases. Non-flexible words are the opposite of fully-flexible words; they can never show their status and look the same in all three cases.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+نصب
+   مُسْ لِمات َ ْمُسْ لِمِي ِ ْ مُسْ لِمَي  مِلْسُم
+جر
+There are three forms of flexibility. They are: 
+1)
+fully-flexible ( )مُنَْصَ ِف/مُعْرَب
+2)
+partly-flexible ( ِ)مَمْنُوْعٌ مِن الَصَّ ْف
+3)
+non-flexible (  ِ )مَبْن
+We will discuss partly-flexible last, because it requires the most attention. 
+FULLY-FLEXIBLE (بَرْعُم/فِ ََصْنُ )مis the default state for a word. It is the broadest category. A fully-flexible
+---
+word is a word that can show all three statuses in a normal way according to what we learned in the 
+ مسلمchart.
+Fully-Flexible Endings are: 
+( مسلمٌ  : رفعun) 
+( مسلمً ا : نصبan) 
+( مسلم   : جرin) 
+(3 Statuses have 3 Unique Endings)
+NON-FLEXIBLE (  ِنْبَ )مwords are the opposite of fully-flexible words. They can never show their status.
+This means that they look the same in the  رفعstatus, the  نصبstatus, and the  جرstatus. Words that end
+in لِف مَقْصُ وْرَة
+َ
+ أ
+---
+flexible words as you are exposed to more vocabulary.  However, there are a few categories of partly-
+flexible words we can familiarize ourselves with to make identification of partly-flexible words easier.  
+A. NON-ARAB NAMES
+Non-Arab names are partly-flexible. Arab names are fully-flexible. There are four Arab prophet’s names 
+mentioned in the Quran. They are:  ٌ ,صالِحٌ  ,هُوْدٌ  ,ُمُ َمَّدand  ٌ .شُ عَيْبTake a look at the chart below. Take note of
+---
+flexible word can only take a  ضمةand a  .فتحةA partly-flexible word can also never take  .تَنْوِيْنThis type of
+word takes a single  ضمةin the  رفعform, a single  فتحةin the  نصبform, and a single  فتحةin the  جرform.
+Partly-Flexible Endings are: 
+: رفع
+ 
+(  يُوْسُ فُ u)
+: نصب
+ 
+(  يُوْسُ فَ a)
+( يُوْسُ فَ  : جرa)
+Notice that  نصبand  جرlook the same. We have seen this problem before in ending
+combinations. 
+(3 Statuses have 2 Endings)
+>>>
+
+And here are the key points the student should recall:
+- Flexibility is a sub-category of status
+- Flexibility only pertains to singular words
+- Words may only be fully-flexible, partly-flexible, or non-flexible.
+
+The student wrote:
+""""""There are 3 types of flexibility in Arabic, non-flexible, partly-flexible, and fully-flexible. 
+Non flexible words don't show their status by their ending sound.
+Partly-flexible words show their status through their ending sound, but -a corresponds to nasb and jarr.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 70,\n  \""correct_points\"": [\n    \""Identified the three types of flexibility: non-flexible, partly-flexible, and fully-flexible.\"",\n    \""Correctly stated that non-flexible words do not show their status by their ending.\"",\n    \""Correctly stated that for partly-flexible words, the '-a' ending corresponds to both nasb and jarr.\""\n  ],\n  \""incorrect_points\"": [],\n  \""missed_points\"": [\n    \""Did not describe fully-flexible words.\"",\n    \""Did not mention that flexibility is a sub-category of status.\"",\n    \""Did not mention that flexibility only pertains to singular words.\"",\n    \""Did not mention that partly-flexible words cannot take tanwin and take a single dammah in the raf' form.\""\n  ],\n  \""generated_feedback\"": \""You have a good grasp of the three types of flexibility and correctly described the key features of non-flexible and partly-flexible words. To improve, make sure to also include a description of fully-flexible words, which are the most common type. Also, try to remember the key contextual points, such as flexibility being a sub-category of status for singular words, and the fact that partly-flexible words can never take tanwin.\"",\n  \""rewritten_answer\"": \""Flexibility is a sub-category of status that pertains to singular words. Words may only be fully-flexible, partly-flexible, or non-flexible. Fully-flexible is the default and a word can show all three statuses with three unique endings (e.g., -un, -an, -in). Partly-flexible words cannot take tanwin and have only two endings for the three statuses; they take a single dammah for raf', and a single fathah for both nasb and jarr. Non-flexible words never show their status by their ending sound and look the same in all three statuses.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+نصب
+   مُسْ لِمات َ ْمُسْ لِمِي ِ ْ مُسْ لِمَي  مِلْسُم
+جر
+There are three forms of flexibility. They are: 
+1)
+fully-flexible ( )مُنَْصَ ِف/مُعْرَب
+2)
+partly-flexible ( ِ)مَمْنُوْعٌ مِن الَصَّ ْف
+3)
+non-flexible (  ِ )مَبْن
+We will discuss partly-flexible last, because it requires the most attention. 
+FULLY-FLEXIBLE (بَرْعُم/فِ ََصْنُ )مis the default state for a word. It is the broadest category. A fully-flexible
+---
+flexible words as you are exposed to more vocabulary.  However, there are a few categories of partly-
+flexible words we can familiarize ourselves with to make identification of partly-flexible words easier.  
+A. NON-ARAB NAMES
+Non-Arab names are partly-flexible. Arab names are fully-flexible. There are four Arab prophet’s names 
+mentioned in the Quran. They are:  ٌ ,صالِحٌ  ,هُوْدٌ  ,ُمُ َمَّدand  ٌ .شُ عَيْبTake a look at the chart below. Take note of
+---
+word is a word that can show all three statuses in a normal way according to what we learned in the 
+ مسلمchart.
+Fully-Flexible Endings are: 
+( مسلمٌ  : رفعun) 
+( مسلمً ا : نصبan) 
+( مسلم   : جرin) 
+(3 Statuses have 3 Unique Endings)
+NON-FLEXIBLE (  ِنْبَ )مwords are the opposite of fully-flexible words. They can never show their status.
+This means that they look the same in the  رفعstatus, the  نصبstatus, and the  جرstatus. Words that end
+in لِف مَقْصُ وْرَة
+َ
+ أ
+---
+جر
+نصب
+رفع
+  عَدْن
+عَدْنًا ٌ عَدْن
+There are certain word patterns that are partly-flexible. We will look at these patterns in our study of 
+Sarf.  
+Note: In your vocabulary, partly flexible words will be denoted by having a single vowel ending, not a 
+ .تنوينFor now, as you memorize new vocabulary, make a note of which words are partly-flexible.
+➢ DRILL 5    Are the following words fully, partly, or non-flexible? Why?  
+REASON 
+FLEXIBILITY WORD
+REASON 
+FLEXIBILITY 
+WORD
+F / P / N
+>>>
+
+And here are the key points the student should recall:
+- Flexibility is a sub-category of status
+- Flexibility only pertains to singular words
+- Words may only be fully-flexible, partly-flexible, or non-flexible.
+
+The student wrote:
+""""""There are 3 main types of Arabic words, party-flexible, fully-flexible, and non-flexible.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 50,\n  \""correct_points\"": [\n    \""You correctly identified the three types of flexibility: partly-flexible, fully-flexible, and non-flexible.\""\n  ],\n  \""incorrect_points\"": [\n    \""You incorrectly framed flexibility as one of the 'main types of Arabic words'. It is more accurately a sub-category of status.\""\n  ],\n  \""missed_points\"": [\n    \""You did not mention that flexibility is a sub-category of status.\"",\n    \""You missed the point that flexibility, in this context, pertains to singular words.\""\n  ],\n  \""generated_feedback\"": \""You've correctly recalled the three categories of flexibility, which is a great start. The next step is to understand the context. Flexibility isn't a primary way to categorize all Arabic words, but rather a property of singular words that describes how they show their grammatical status. Keep up the good work!\"",\n  \""rewritten_answer\"": \""Flexibility is a sub-category of status that pertains to singular words. Words can be categorized into one of three types of flexibility: fully-flexible, partly-flexible, or non-flexible.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+رفع ٌ مسلمَ ات
+نصب   مسلمَ ات
+جر  مسلمَ ات
+Notice that the  مgets a  فتحةin all the forms. Also notice that the  نصبand  جرforms are exactly the same.
+The way to distinguish between them is context. 
+Now that you are familiar with all of the status markers, you should be able to determine the status of a 
+word in Arabic. It is important to note that when determining status, you should ALWAYS look for ending 
+combinations BEFORE you look for ending sounds.
+---
+The after-of is always in the    جَرstatus. The way you say “in the    جَرstatus” in Arabic is  ٌ .َمَ ْرُوْرMEMORIZE this 
+term and use it. 
+➢  DRILL 1    Determine the status of each  .اسمLabel them ( رفعR) or ( نصبN) or ( جرJ).
+The teacher entered the classroom. His student was sleeping soundly. He threw a pencil, and the 
+student woke up suddenly. The student’s mother called the teacher the next day and confronted him 
+angrily. The teacher lost his job. 
+2.2 HOW TO TELL STATUS
+---
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+3)
+Every  ماضlooks the same regardless of the clan – they all follow the pattern  َّف ل
+4)
+In the  ,مضارعthe  حركةthat usually goes on the SECOND root letter is TRANSFERRED to the FIRST root
+letter
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""3 status are in arabic, which are nasb, jarr, and raf'. 
+Jarr is used sometimes after harf jarr.
+Nasb is used for done-to and after hraf nasb.
+Raf' is sued mainly.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 65,\n  \""correct_points\"": [\n    \""You correctly identified that there are three statuses in Arabic: nasb, jarr, and raf'.\"",\n    \""You correctly stated that nasb is used for the 'done-to' and after certain particles (hraf nasb).\"",\n    \""You correctly stated that jarr is used after prepositions (harf jarr).\""\n  ],\n  \""incorrect_points\"": [\n    \""Your description for raf' ('is sued mainly') is too vague and doesn't explain its specific grammatical functions.\""\n  ],\n  \""missed_points\"": [\n    \""You did not mention the specific primary uses of الرفع, which are for the subject, the predicate, and the doer.\""\n  ],\n  \""generated_feedback\"": \""You have a good foundational understanding, correctly naming the three statuses and providing accurate uses for نصب and جر. However, your explanation for رفع was too general. To improve, focus on memorizing the specific grammatical roles associated with رفع, such as the subject, predicate, and doer. This will give you a more complete and actionable understanding of Arabic grammar.\"",\n  \""rewritten_answer\"": \""There are three statuses in Arabic: الرفع (raf'), النصب (nasb), and الجر (jarr). الرفع is used for the subject, the predicate, and the doer. النصب is used for the object of the verb (the done-to) and after certain particles that trigger it. الجر is used after prepositions.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+combination. These words are considered heavy. HEAVY is the DEFAULT. To make a word light, all you 
+have to do is remove the ‘n’ sound at the end.  
+Plural 
+Pair 
+Singular 
+muslimoo na 
+muslimaa ni 
+muslimu n  رفع
+muslimee na 
+muslimay ni 
+muslima n نصب
+muslimee na 
+muslimay ni 
+muslimi n جر
+Plural 
+Pair 
+Singular 
+muslimaatu n 
+muslimataa ni 
+muslimatu n  رفع
+muslimaati n 
+muslimatay ni 
+muslimata n نصب
+muslimaati n 
+muslimatay ni 
+muslimati n جر
+---
+muslimaati n 
+muslimatay ni 
+muslimati n جر
+To get rid of the  نsound in Arabic, use the following rules.
+1)
+If the word ends in a double accent ( ,)اتلَّنْوِيْنreplace the double accent with a single  .حَرَكَةFor
+instance, the word  ٌ مسلمwould become  ُ .مسلمThe word مسل
+مات  
+ would become  ِ .مسلمات
+2)
+If the word ends in the letter  ,نall you have to do is drop the  .نFor instance, the word مسلمون
+becomes  .مسلمو
+Below are the  مسلمcharts in the light form. MEMORIZE them.
+Plural 
+Pair
+---
+It is important to keep in mind that whenever you are trying to figure out the status of an Ism you must 
+look at the ending of the word. There are two types of endings we will see, ending sounds (vowel 
+change at the end) and ending combinations (letters added to the end of a word). 
+The number/gender variations are singular, pair, masculine plural, and feminine plural.  Take a look at 
+the charts below. Notice how each status looks different depending on the number and the gender of
+---
+example, “book” becomes “books” and “house” becomes “houses”. There are some words, however, 
+that do not follow this pattern. The plural of “goose”, for instance is “geese”. The plural of “tooth” is 
+“teeth”, and the plural of “mouse” is “mice”.  
+In a similar way, in many cases in Arabic, an ending combination ( ٍ )ونَ /ينَ /اتٌ /اتcan be added to the 
+singular version of a word to make it plural. There are some cases, however, where the original form of
+>>>
+
+And here are the key points the student should recall:
+- Singular words that end with a ضمة or ضمتان generally are الرفع.
+- Singular words that end with a كسرة or كسرتان generally are الجر.
+- Singular words that end with a فتحة or فتحتان generally are النصب.
+
+The student wrote:
+""""""Words that end with a -a or -an sound are nasb.
+Words that end with a -i or -in sound are jarr.
+Words that end in a -u or -un sound are raf'.
+
+Words that end with -aatin are nasb or jarr.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 80,\n  \""correct_points\"": [\n    \""Words that end with a -a or -an sound are nasb.\"",\n    \""Words that end with a -i or -in sound are jarr.\"",\n    \""Words that end in a -u or -un sound are raf'.\"",\n    \""Words that end with -aatin are nasb or jarr.\""\n  ],\n  \""incorrect_points\"": [],\n  \""missed_points\"": [\n    \""You did not mention the ending for feminine plurals in the raf' case (-aatun).\"",\n    \""You did not mention the endings for masculine plurals (-oona for raf' and -eena for nasb/jarr).\"",\n    \""You did not mention the endings for pairs (-aani for raf' and -ayni for nasb/jarr).\""\n  ],\n  \""generated_feedback\"": \""Great job! You have correctly identified all the ending sounds for singular words and the feminine plural ending for nasb and jarr. Your answer is accurate, but it's incomplete. To make it more comprehensive, you should also include the ending combinations for masculine plurals and pairs, as well as the feminine plural raf' ending. Review the charts in the text to memorize all the variations.\"",\n  \""rewritten_answer\"": \""The status of a word can often be identified by its ending. For singular words: -u or -un endings (ضمة/ضمتان) indicate raf'; -a or -an endings (فتحة/فتحتان) indicate nasb; and -i or -in endings (كسرة/كسرتان) indicate jarr. For plurals and pairs, we look at ending combinations. Feminine plurals end in -aatun for raf' and -aatin for both nasb and jarr. Masculine plurals end in -oona for raf' and -eena for both nasb and jarr. Pairs end in -aani for raf' and -ayni for both nasb and jarr.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+نصب
+   مُسْ لِمات َ ْمُسْ لِمِي ِ ْ مُسْ لِمَي  مِلْسُم
+جر
+There are three forms of flexibility. They are: 
+1)
+fully-flexible ( )مُنَْصَ ِف/مُعْرَب
+2)
+partly-flexible ( ِ)مَمْنُوْعٌ مِن الَصَّ ْف
+3)
+non-flexible (  ِ )مَبْن
+We will discuss partly-flexible last, because it requires the most attention. 
+FULLY-FLEXIBLE (بَرْعُم/فِ ََصْنُ )مis the default state for a word. It is the broadest category. A fully-flexible
+---
+word is a word that can show all three statuses in a normal way according to what we learned in the 
+ مسلمchart.
+Fully-Flexible Endings are: 
+( مسلمٌ  : رفعun) 
+( مسلمً ا : نصبan) 
+( مسلم   : جرin) 
+(3 Statuses have 3 Unique Endings)
+NON-FLEXIBLE (  ِنْبَ )مwords are the opposite of fully-flexible words. They can never show their status.
+This means that they look the same in the  رفعstatus, the  نصبstatus, and the  جرstatus. Words that end
+in لِف مَقْصُ وْرَة
+َ
+ أ
+---
+combinations. 
+(3 Statuses have 2 Endings)
+**Unlike a non-flexible word, there are times when a partly-flexible word can be made fully flexible by 
+showing a  كرسةin the  جرform. A partly-flexible word can be made fully-flexible in two ways:
+1)
+by adding an   ال
+2)
+by making it a ( مضافdiscussed in a later chapter)
+HOW TO INDENTIFY PARTLY FLEXIBLE WORDS 
+18
+There is no clear marker for partly flexible words. You will become accustomed to identifying partly-
+---
+flexible words as you are exposed to more vocabulary.  However, there are a few categories of partly-
+flexible words we can familiarize ourselves with to make identification of partly-flexible words easier.  
+A. NON-ARAB NAMES
+Non-Arab names are partly-flexible. Arab names are fully-flexible. There are four Arab prophet’s names 
+mentioned in the Quran. They are:  ٌ ,صالِحٌ  ,هُوْدٌ  ,ُمُ َمَّدand  ٌ .شُ عَيْبTake a look at the chart below. Take note of
+>>>
+
+And here are the key points the student should recall:
+- Flexibility is a sub-category of status
+- Flexibility only pertains to singular words
+- Words may only be fully-flexible, partly-flexible, or non-flexible.
+
+The student wrote:
+""""""Flexibilty is in 3 types, fully-flexible, non-flexible, and partly-flexible.
+Fully flexible means a word shows its status clearly at the end through sounds.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n\""score\"": 50,\n\""correct_points\"": [\n\""Flexibility has three types: fully-flexible, non-flexible, and partly-flexible.\"",\n\""Fully-flexible words show their status clearly at the end.\""\n],\n\""incorrect_points\"": [],\n\""missed_points\"": [\n\""Flexibility is a sub-category of status.\"",\n\""Flexibility only pertains to singular words.\"",\n\""The definition of a non-flexible word (it looks the same in all three statuses).\"",\n\""The definition of a partly-flexible word and the two ways it can be made fully-flexible.\""\n],\n\""generated_feedback\"": \""You've correctly identified the three types of flexibility and have a basic understanding of what 'fully-flexible' means, which is a great start. However, your answer is missing the definitions for non-flexible and partly-flexible words. It also leaves out the key concepts that flexibility is a sub-category of status and that it applies specifically to singular words. Reviewing the material to add these details will give you a much more complete picture.\"",\n\""rewritten_answer\"": \""Flexibility is a sub-category of status that pertains to singular words. Words can be one of three types: fully-flexible, partly-flexible, or non-flexible. Fully-flexible words show all three statuses with unique endings. Non-flexible words look the same in all three statuses (رفع, نصب, and جر). Partly-flexible words have two endings for the three statuses, but can be made fully-flexible by adding 'ال' or by being a مضاف.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+combinations. 
+(3 Statuses have 2 Endings)
+**Unlike a non-flexible word, there are times when a partly-flexible word can be made fully flexible by 
+showing a  كرسةin the  جرform. A partly-flexible word can be made fully-flexible in two ways:
+1)
+by adding an   ال
+2)
+by making it a ( مضافdiscussed in a later chapter)
+HOW TO INDENTIFY PARTLY FLEXIBLE WORDS 
+18
+There is no clear marker for partly flexible words. You will become accustomed to identifying partly-
+---
+flexible words as you are exposed to more vocabulary.  However, there are a few categories of partly-
+flexible words we can familiarize ourselves with to make identification of partly-flexible words easier.  
+A. NON-ARAB NAMES
+Non-Arab names are partly-flexible. Arab names are fully-flexible. There are four Arab prophet’s names 
+mentioned in the Quran. They are:  ٌ ,صالِحٌ  ,هُوْدٌ  ,ُمُ َمَّدand  ٌ .شُ عَيْبTake a look at the chart below. Take note of
+---
+جر
+نصب
+رفع
+  عَدْن
+عَدْنًا ٌ عَدْن
+There are certain word patterns that are partly-flexible. We will look at these patterns in our study of 
+Sarf.  
+Note: In your vocabulary, partly flexible words will be denoted by having a single vowel ending, not a 
+ .تنوينFor now, as you memorize new vocabulary, make a note of which words are partly-flexible.
+➢ DRILL 5    Are the following words fully, partly, or non-flexible? Why?  
+REASON 
+FLEXIBILITY WORD
+REASON 
+FLEXIBILITY 
+WORD
+F / P / N
+---
+أسماء اإلشارة
+17
+ َِيْن
+اَّلَّ ِْي
+اَّلَّ َذَلِك
+هَذا
+ ْ ِاالَّت
+،
+الَّواتِ ْ 
+،
+االَّ ئِ ْ  ْ ِالَّت َتِلْك ِهَذِه
+ ْمَن
+ما َوْالئِك
+ُ
+أ ِهَؤُالء
+Non-Flexible Endings all look the same, there is no way to distinguish them by looking at the 
+word alone: 
+َ ى  : رفع
+ مُ وْس
+َ ى  : نصب
+ مُ وْس
+َ ى  : جر
+ مُ وْس
+(3 Statuses have 1 Ending)
+PARTLY-FLEXIBLE ( ِفْ َّالَص نِم ٌعْوُنْمَ )مare words that can only display their status in two ways. A partly-
+>>>
+
+And here are the key points the student should recall:
+- Flexibility is a sub-category of status
+- Flexibility only pertains to singular words
+- Words may only be fully-flexible, partly-flexible, or non-flexible.
+
+The student wrote:
+""""""Non-flexible words are very similar to partly-flexible words as neither of them show their status clearly.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","""{\n  \""score\"": 20,\n  \""correct_points\"": [\n    \""Non-flexible words and partly-flexible words are similar in that neither fully shows all three statuses distinctly.\""\n  ],\n  \""incorrect_points\"": [\n    \""Your statement that 'neither of them show their status clearly' is imprecise. Partly-flexible words show their status more clearly than non-flexible words by having two distinct endings for the three statuses, whereas non-flexible words have only one ending for all three statuses.\""\n  ],\n  \""missed_points\"": [\n    \""Flexibility is a sub-category of status.\"",\n    \""Flexibility only pertains to singular words.\"",\n    \""Words may only be fully-flexible, partly-flexible, or non-flexible.\"",\n    \""You did not explain the key difference: non-flexible words have one ending for three statuses, while partly-flexible words have two endings for three statuses.\""\n  ],\n  \""generated_feedback\"": \""You correctly noticed a similarity between non-flexible and partly-flexible words. However, your answer lacks the precise details that distinguish them. The key difference is that partly-flexible words can show two different endings across the three statuses, while non-flexible words only ever show one. Try to review the definitions of the three types of flexibility to understand these crucial differences.\"",\n  \""rewritten_answer\"": \""Flexibility is a sub-category of status that pertains to singular words. Words can be one of three types: fully-flexible, partly-flexible, or non-flexible. A non-flexible word has only one ending for all three statuses, so its status is never clear from the ending. A partly-flexible word has two endings for the three statuses; the رفع case is distinct, but the نصب and جر cases look the same. Therefore, while both partly-flexible and non-flexible words do not show all three statuses distinctly, partly-flexible words provide more grammatical information than non-flexible ones.\""\n}"""
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+3)
+Every  ماضlooks the same regardless of the clan – they all follow the pattern  َّف ل
+4)
+In the  ,مضارعthe  حركةthat usually goes on the SECOND root letter is TRANSFERRED to the FIRST root
+letter
+---
+4. 
+ ِ ْعَيْنَي
+M / F
+5. 
+ َاِلُسْن
+ M / F
+6. 
+ َمَكَّة
+M / F
+7. 
+ ِ ْمُؤْمِنَي
+ M / F
+8. 
+ ُبْكَم
+َ
+أ
+M / F
+9.   عَصَ اM / F
+10
+. صَ ابِرًا
+3.2 NUMBER – العدد
+The third property of the  اسمis number. All words in Arabic have a singular version (ٌُ ,)م فْرَ دa pair version 
+( )م ثَنَّىand a plural version (ٌُ .)جَمعThe singular and pair are standard and easy to recognize. They are the 
+first and second columns of the  مسلمchart. When it comes to plurals, however, there are four types. They
+---
+.إيله
+3,000 is     .ثَالثُ آالف
+5,000 is َخَ ْسُ آال
+ف  
+ .
+The gender of the first digit (the 3 and the 5 in this case) will be the OPPOSITE gender of the   .معدود
+Each of these numbers appears once in the Quran. Take a look at the following examples.  
+44
+ 
+ٌٌۡ إِذ
+نٌيُمِدذٌ
+َ
+لَنٌيَكۡفِيَكُمٌۡأ
+َ
+تَقُولُ ٌلِلۡمُؤۡمِنِيٌَأ
+كُمٌۡرَبُّكُمٌ
+بِثَلَ َٰثَةٌِءَالََٰفن ٌ
+ٌ
+م ِنَ ٌ
+ٱلۡمَلََٰٓئِكَةٌِ
+ٌ
+مُزنَلِيٌَ
+ٌ بََلَ َٰٓ ٌُۚ ٌ ٤٢١
+إِنٌتَصۡ ربِ ُواٌْوَتَتذقُواٌْ
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""There are 3 cases in Arabic.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","{""score"": 10, ""correct_points"": [""You correctly stated that there are 3 cases in Arabic.""], ""incorrect_points"": [], ""missed_points"": [""You did not name the three cases: الرفع, النصب, and الجر."", ""You did not explain the primary use of الرفع (for the subject, predicate, and doer)."", ""You did not explain the primary use of النصب (for the done-to and after حروف which trigger its use)."", ""You did not explain the primary use of الجر (after prepositions).""], ""generated_feedback"": ""You've correctly identified the number of grammatical cases in Arabic, which is a good start. However, the main goal was to recall the names of these cases and their primary functions. It's crucial to understand when to use الرفع, النصب, and الجر as this is fundamental to forming correct sentences. Please review the key points and focus on associating each case with its specific grammatical roles."", ""rewritten_answer"": ""There are three grammatical cases in Arabic: الرفع (ar-raf'), النصب (an-nasb), and الجر (al-jar). الرفع is primarily used for the subject of a sentence, the predicate, and the doer of a verb. النصب is used for the object of the verb (the done-to) and also comes after certain particles (حروف) that trigger its use. Lastly, الجر is used for nouns that follow a preposition.""}"
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+3)
+Every  ماضlooks the same regardless of the clan – they all follow the pattern  َّف ل
+4)
+In the  ,مضارعthe  حركةthat usually goes on the SECOND root letter is TRANSFERRED to the FIRST root
+letter
+---
+4. 
+ ِ ْعَيْنَي
+M / F
+5. 
+ َاِلُسْن
+ M / F
+6. 
+ َمَكَّة
+M / F
+7. 
+ ِ ْمُؤْمِنَي
+ M / F
+8. 
+ ُبْكَم
+َ
+أ
+M / F
+9.   عَصَ اM / F
+10
+. صَ ابِرًا
+3.2 NUMBER – العدد
+The third property of the  اسمis number. All words in Arabic have a singular version (ٌُ ,)م فْرَ دa pair version 
+( )م ثَنَّىand a plural version (ٌُ .)جَمعThe singular and pair are standard and easy to recognize. They are the 
+first and second columns of the  مسلمchart. When it comes to plurals, however, there are four types. They
+---
+.إيله
+3,000 is     .ثَالثُ آالف
+5,000 is َخَ ْسُ آال
+ف  
+ .
+The gender of the first digit (the 3 and the 5 in this case) will be the OPPOSITE gender of the   .معدود
+Each of these numbers appears once in the Quran. Take a look at the following examples.  
+44
+ 
+ٌٌۡ إِذ
+نٌيُمِدذٌ
+َ
+لَنٌيَكۡفِيَكُمٌۡأ
+َ
+تَقُولُ ٌلِلۡمُؤۡمِنِيٌَأ
+كُمٌۡرَبُّكُمٌ
+بِثَلَ َٰثَةٌِءَالََٰفن ٌ
+ٌ
+م ِنَ ٌ
+ٱلۡمَلََٰٓئِكَةٌِ
+ٌ
+مُزنَلِيٌَ
+ٌ بََلَ َٰٓ ٌُۚ ٌ ٤٢١
+إِنٌتَصۡ ربِ ُواٌْوَتَتذقُواٌْ
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""There are 3 cases in Arabic.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","{""score"": 30, ""correct_points"": [""There are 3 cases in Arabic.""], ""incorrect_points"": [], ""missed_points"": [""The names of the cases: رفع, نصب, and جر are not mentioned."", ""The primary function of each case is not identified (رفع for subject, predicate, and doer; نصب for the done-to and after حروف which trigger its use; جر after prepositions)."", ""No details are given about what each case is used for.""], ""generated_feedback"": ""You correctly remembered that Arabic has three grammatical cases. However, you need to be more specific by listing the names of the cases and explaining their primary uses. It is important to mention how each case is applied in a sentence, as this information will help clarify the structure of Arabic grammar. Read through the lesson again and try to recall the details of each case."", ""rewritten_answer"": ""There are three cases in Arabic: الرفع (raf'), النصب (nasb), and الجر (jarr). الرفع is primarily used for the subject, predicate, and doer; النصب is mainly for the done-to and after certain words (حروف) that require its use; and الجر is used after prepositions. Understanding these cases helps explain the roles of words in Arabic sentences.""}"
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2.2 HOW TO TELL STATUS 
+In English, we were able to determine the status based on the meaning. In Arabic, however, status is 
+determined by a marker or sign at the end of the word.  
+As you know, there are three statuses in Arabic. There are, however, more than three status markers or 
+signs. In other words, there are more than three ways that the status of a word can show. This is 
+because each status can show in different ways depending on the number and the gender of the word.
+---
+pronoun may change depending on the last  حركةon the word it attaches to. You will get a feel for this
+with time. The only exception to this is the  أناversion, where the different versions indicate different
+statuses.  
+SUMMARY OF STATUS 
+So far in our discussion of status, we have seen the 3 forms of status,  , رفع نصب جرshow themselves in 
+many different ways. The following chart is a summary of the different ways we see the 3 forms of 
+status: 
+Pronouns
+(Independent vs 
+Attached) 
+Ending
+---
+The after-of is always in the    جَرstatus. The way you say “in the    جَرstatus” in Arabic is  ٌ .َمَ ْرُوْرMEMORIZE this 
+term and use it. 
+➢  DRILL 1    Determine the status of each  .اسمLabel them ( رفعR) or ( نصبN) or ( جرJ).
+The teacher entered the classroom. His student was sleeping soundly. He threw a pencil, and the 
+student woke up suddenly. The student’s mother called the teacher the next day and confronted him 
+angrily. The teacher lost his job. 
+2.2 HOW TO TELL STATUS
+---
+It is important to keep in mind that whenever you are trying to figure out the status of an Ism you must 
+look at the ending of the word. There are two types of endings we will see, ending sounds (vowel 
+change at the end) and ending combinations (letters added to the end of a word). 
+The number/gender variations are singular, pair, masculine plural, and feminine plural.  Take a look at 
+the charts below. Notice how each status looks different depending on the number and the gender of
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""There are many ways to tell status.""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","{""score"": 10, ""correct_points"": [""You correctly stated that there are many ways to tell status, which aligns with the text saying 'there are more than three ways that the status of a word can show'.""], ""incorrect_points"": [], ""missed_points"": [""You missed the most crucial point from the text: status is determined by looking at the **ending** of the word."", ""You did not mention the primary uses of الرفع (subject, predicate, and doer)."", ""You did not mention the primary uses of النصب (done-to and after certain حروف)."", ""You did not mention the primary use of الجر (after prepositions).""], ""generated_feedback"": ""You've grasped a very general idea, which is a start. However, your answer is missing the core concepts of the lesson. The most important takeaway is *how* we tell status in Arabic—by looking at the ending of the word. You also missed the key functions of each status (الرفع, النصب, and الجر). Please review the material again, focusing on how to identify status markers and what each status indicates about a word's role in a sentence."", ""rewritten_answer"": ""In Arabic, we determine a word's status by looking at the marker or sign at its ending. The three statuses have primary functions: الرفع is used for the subject, predicate, and doer; النصب is used for the object of the verb (the done-to) and after certain particles (حروف) that trigger it; and الجر is used for words that come after a preposition.""}"
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+3)
+Every  ماضlooks the same regardless of the clan – they all follow the pattern  َّف ل
+4)
+In the  ,مضارعthe  حركةthat usually goes on the SECOND root letter is TRANSFERRED to the FIRST root
+letter
+---
+4. 
+ ِ ْعَيْنَي
+M / F
+5. 
+ َاِلُسْن
+ M / F
+6. 
+ َمَكَّة
+M / F
+7. 
+ ِ ْمُؤْمِنَي
+ M / F
+8. 
+ ُبْكَم
+َ
+أ
+M / F
+9.   عَصَ اM / F
+10
+. صَ ابِرًا
+3.2 NUMBER – العدد
+The third property of the  اسمis number. All words in Arabic have a singular version (ٌُ ,)م فْرَ دa pair version 
+( )م ثَنَّىand a plural version (ٌُ .)جَمعThe singular and pair are standard and easy to recognize. They are the 
+first and second columns of the  مسلمchart. When it comes to plurals, however, there are four types. They
+---
+considered a full sentence, a   .َجلة فعلية
+There are three types of  فعلin Arabic. They are: 
+1) الفعل الم
+اضىي
+– the past-tense فعل
+2) – الفعل المضارعthe present/future-tense فعل
+3) فعل األمر
+/
+انلهىي
+–the imperative فعل
+There are other  فعلforms that can be derived from these three types, but they are not considered 
+separate types or categories of  .فعلThey are considered variations of these three basic types.  
+USING A  فعلIN A SENTENCE
+---
+learn one set of rules.  
+الرصف
+ 
+الصغري
+When it comes to  رصفّصغْيof  مضاعفّمزيدّفيهwords, remember the following two rules: 
+1)
+The second and third root letters fuse and a  ش دَّةis used to represent the fusion
+2)
+There are three versions of the  أمرand  :نيه
+a.
+The first takes a  فتحةand retains the )ـَّ ( ش دَّة
+b.
+The second takes a  كرسةand retains the )ـِ ( ش دَّة
+c.
+The third follows the pattern of a normal  أمرor  ;نيهthe two like letters separate
+Take a look at the charts below.
+>>>
+
+And here are the key points the student should recall:
+- الرفع is primarily used for the subject, predicate, and doer.
+- النصب is primarily used for the done-to and after حروف which trigger its use.
+- الجر is primarily used after prepositions.
+
+The student wrote:
+""""""There are 3 Arabic cases""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","{""score"": 10, ""correct_points"": [""You correctly identified that there are 3 grammatical cases in Arabic.""], ""incorrect_points"": [], ""missed_points"": [""You did not name the three cases: الرفع, النصب, and الجر."", ""You did not explain the primary use of الرفع (for the subject, predicate, and doer)."", ""You did not explain the primary use of النصب (for the done-to and after certain حروف)."", ""You did not explain the primary use of الجر (after prepositions).""], ""generated_feedback"": ""You've correctly identified the number of grammatical cases in Arabic, which is a good starting point. However, your answer is missing the essential details about what these cases are called and their primary functions. The goal is to recall not just that the cases exist, but when and why they are used. Please review the key points again to understand the roles of الرفع, النصب, and الجر."", ""rewritten_answer"": ""There are three primary grammatical cases in Arabic:\n1.  **الرفع (ar-raf')**: This case is primarily used for the subject, the predicate, and the doer of an action.\n2.  **النصب (an-nasb)**: This case is primarily used for the object of the verb (the done-to) and also appears after certain particles (حروف) that trigger its use.\n3.  **الجر (al-jarr)**: This case is primarily used for nouns that come after prepositions.""}"
+"
+You are an Arabic language tutor.
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+
+Here is the relevant content retrieved from the textbook
+<<<
+2.2 HOW TO TELL STATUS 
+In English, we were able to determine the status based on the meaning. In Arabic, however, status is 
+determined by a marker or sign at the end of the word.  
+As you know, there are three statuses in Arabic. There are, however, more than three status markers or 
+signs. In other words, there are more than three ways that the status of a word can show. This is 
+because each status can show in different ways depending on the number and the gender of the word.
+---
+رفع ٌ مسلمَ ات
+نصب   مسلمَ ات
+جر  مسلمَ ات
+Notice that the  مgets a  فتحةin all the forms. Also notice that the  نصبand  جرforms are exactly the same.
+The way to distinguish between them is context. 
+Now that you are familiar with all of the status markers, you should be able to determine the status of a 
+word in Arabic. It is important to note that when determining status, you should ALWAYS look for ending 
+combinations BEFORE you look for ending sounds.
+---
+The after-of is always in the    جَرstatus. The way you say “in the    جَرstatus” in Arabic is  ٌ .َمَ ْرُوْرMEMORIZE this 
+term and use it. 
+➢  DRILL 1    Determine the status of each  .اسمLabel them ( رفعR) or ( نصبN) or ( جرJ).
+The teacher entered the classroom. His student was sleeping soundly. He threw a pencil, and the 
+student woke up suddenly. The student’s mother called the teacher the next day and confronted him 
+angrily. The teacher lost his job. 
+2.2 HOW TO TELL STATUS
+---
+ٱۡلۡ َنذةٌِ
+ٌ
+زُمَرًا ٌ
+  ٣٧ ٌ…
+ 
+ 
+12.4 STATUS 
+The status of the  اسم موصولdepends on the role it is playing in the sentence, as is the case with any other 
+ .اسمHowever, since it is  مبنand cannot show its status, it is labeled as 
+ ِف حمل
+__
+ .The  صلةhas no 
+grammatical labeling. The way this is expressed in Arabic is  ِ .ال حمَ َلر هلا مِنَ اإلعرابThe  صلةas a whole has no 
+labeling; however, if you go inside the  ,صلةyou will find a complete sentence. You can do the  إعرابof
+>>>
+
+And here are the key points the student should recall:
+- Singular words that end with a ضمة or ضمتان generally are الرفع.
+- Singular words that end with a كسرة or كسرتان generally are الجر.
+- Singular words that end with a فتحة or فتحتان generally are النصب.
+
+The student wrote:
+""""""There are many ways to tell status in Arabic""""""
+
+Instructions:
+- Identify what the student got right, wrong, and left out.
+- Give a score out of 100.
+- Provide a brief feedback paragraph.
+- Rewrite the student's answer to be more complete and accurate.
+- By default, use the provided external context to answer the User Query, never use your own knowledge to answer the query.
+
+# Examples:
+Example 1: [
+Relevant retrieved text:
+            Nominative:
+            The subject of a verbal sentence is usually in the nominative case. For example, ""الولد يدرس"" (al-walad yadrus - The boy studies). 
+            Accusative:
+            The direct object of a verb is in the accusative case. For example, ""أنا أقرأ الكتاب"" (Ana a'qra' al-kitab - I read the book). 
+            Genitive:
+            The genitive case is used in several contexts, including after prepositions, when indicating ownership, or when the noun is used with a second noun in a descriptive context (known as idhaafa). 
+
+Key Points:
+            ""الرفع is primarily used for the subject, predicate, and doer."",
+            ""النصب is primarily used for the done-to and after حروف which trigger its use."",
+            ""الجر is primarily used after prepositions.""
+
+User recall:
+            Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب. Raf' is used for subjects, jarr is used for prepositions, and nasb is used for the done-to. 
+            These cases help us understand the role of certain words in Arabic
+
+Your response:
+            {
+                ""score"": 70,
+                ""correct_points"": [""الرفع is primarily used for the subject"", ""النصب is primarily used for the done-to""],
+                ""incorrect_points"": [""You incorrectly stated that الجر is used for prepositions. The correct usage of الجر is after prepositions""],
+                ""missed_points"": [""You didn't mention that النصب is used after حروف which trigger its use"", ""You didn't mention that الرفع is used for the predicate and doer""],
+                ""generate_feedback"": ""You have a solid idea of how cases work in Arabic. You primarily need to focus on the specific details of when the cases are used. I would suggest that you through the lesson once more and focus on the finer details, then try recalling everything you remember a second time. Good luck!"",
+                ""rewritten_answer"": ""Arabic has three cases. One of the cases is رفع, another is جر, and finally we have نصب.  Raf' is used for the subject, predicate, and done-to; jarr is used after prepositions; nasb is used for the done-to and after حروف which trigger its use. 
+                                     These cases help us understand the role of certain words in Arabic""
+            }
+]
+
+Response in this JSON format :
+{
+    ""score"": <number>,
+    ""correct_points"": [...],
+    ""incorrect_points"": [...],
+    ""missed_points"": [...],
+    ""generated_feedback"": ""..."",
+    ""rewritten_answer"": ""...""
+}
+","{""score"": 15, ""correct_points"": [""You correctly stated that there are multiple ways to determine the status of a word in Arabic.""], ""incorrect_points"": [], ""missed_points"": [""You did not mention the primary method for determining status, which is by looking at the marker or sign at the end of the word."", ""You did not list the specific ending sounds for singular words that indicate status: a ضمة or ضمتان for الرفع, a كسرة or كسرتان for الجر, and a فتحة or فتحتان for النصب.""], ""generated_feedback"": ""Your answer is a good starting point, as you've correctly understood that there isn't just one single marker for status. However, your answer is very general. The key to identifying status is to look for the specific markers at the end of a word. Try to review the lesson to memorize which ending sounds correspond to which status, especially for singular words, as these are the most common."", ""rewritten_answer"": ""In Arabic, the status of a word is determined by a marker or sign at its end. For singular words, this is typically an ending sound. Words that end with a ضمة or ضمتان are generally in the الرفع status. Words that end with a كسرة or كسرتان are generally in the الجر status. Words that end with a فتحة or فتحتان are generally in the النصب status.""}"
