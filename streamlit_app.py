@@ -153,9 +153,6 @@ if not st.session_state.hide_lesson:
     st.session_state.lesson = lesson = LESSONS[lesson_id]
     st.markdown(lesson["content"], unsafe_allow_html=True)
 
-print(st.session_state.lesson)
-
-
 
 if not st.session_state.show_recall:
     if st.button("Start Recall"):
