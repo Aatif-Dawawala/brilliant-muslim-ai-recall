@@ -13,4 +13,4 @@ langchain_community
 streamlit
 google-genai
 pydantic-ai
-"pymongo[srv]"
+pymongo
