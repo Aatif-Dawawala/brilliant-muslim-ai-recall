@@ -8,11 +8,21 @@ uri = os.getenv("uri")
 
 client = MongoClient(uri, server_api=ServerApi("1"))
 
+database = client["brilliant-muslim-ai-recall"]
+collection = database["logged-demo-data"]
+
 try:
     client.admin.command('ping')
     print("Pinged!")
 except Exception as e:
     print(e)
+
+
+def append_example_mongo(prompt: str, response: dict):
+    collection.insert_one({"prompt" : prompt,
+                           "response" : json.dumps(response, ensure_ascii=False)})
+    
+
 
 def append_example(prompt: str, response: dict, path: str = "eval_dataset.csv"):
 
