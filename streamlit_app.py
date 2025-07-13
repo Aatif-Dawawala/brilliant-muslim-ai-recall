@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 from typing import List
 from prompt_templates import build_rag_prompt
-from evaluation_logger import append_example
+from evaluation_logger import append_example_mongo
 from model_switcher import evaluate, OutputFormat
 
 load_dotenv()
@@ -29,7 +29,7 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) ->
 
     prompt = build_rag_prompt(user_response, retrieved_text, key_points)
     result = evaluate(prompt, model_choice)
-    append_example(prompt, result)
+    append_example_mongo(prompt, result)
     return result
 
 API_URL = "http://127.0.0.1:8000/evaluate"
