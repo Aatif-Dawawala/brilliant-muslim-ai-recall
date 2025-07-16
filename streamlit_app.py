@@ -29,7 +29,7 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) ->
 
     prompt = build_rag_prompt(user_response, retrieved_text, key_points)
     result = evaluate(prompt, model_choice)
-    append_example_mongo(prompt, result)
+    append_example_mongo(prompt, result, user_response, lesson["title"])
     return result
 
 API_URL = "http://127.0.0.1:8000/evaluate"
@@ -133,8 +133,7 @@ LESSONS = {
             "In Arabic, status is determined by a marker or sign at the end of words",
             "While there are 3 cases, there are more than 3 case markers or signs.",
             "When finding the status of a word, there are two things to pay attention to, ending sounds and ending combinations.",
-            "The number/gender variations consist of singular, pair, masculine plural, and feminine plural."
-            
+            "The number/gender variations consist of singular, pair, masculine plural, and feminine plural."           
             ]
     },
         "lesson3": {
