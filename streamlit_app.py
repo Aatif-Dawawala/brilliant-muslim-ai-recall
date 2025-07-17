@@ -140,15 +140,33 @@ LESSONS = {
         "title": "Light vs. Heavy",
         "content": """
             ### Understanding Light and Heavy Words
-            Words can either be light or heavy, with heavy being the default.
-            In order to make a word light, simply remove the ن at the end.
+            Lightness and heaviness are not from among the four properties of the اسم. Rather, the discussion of
+            light and heavy is a sub-topic that falls under status. Now that we have learned about the different
+            markers that we can use to determine status, we will learn about different variations and forms that
+            these markers can take.
 
-            For example:
-            - مسلمٌ <- مسلمُ
-            - مسلمان <- مسلما
-            - مسلمون <- مسلمو
+            Notice that every word in the مسلم chart ends in an ‘n’ sound, whether it be an ending sound or
+            combination. These words are considered heavy. **Heavy** is the **default**. To make a word light, all you
+            have to do is remove the ‘n’ sound at the end.
 
-            - Words are never light unless there is a specific reason for them to be.
+            | Plural 	| Pair   	| Singular 	|     	|
+            |--------	|--------	|----------	|-----	|
+            |  مسلمو 	|  مسلما 	|  مسلم    	| رفع 	|
+            |  مسلمي 	|  مسلمي 	|  مسلم    	| نصب 	|
+            |  مسلمي 	|  مسلمي 	|  مسلم    	| جر  	|
+
+            To get rid of the ن sound in Arabic, use the following rules.
+
+            1. If the word ends in a double accent (ْالتَّنْوِين), replace the double accent with a single حَرَكَة. For
+            instance, the word مسلمٌ would become مسلمُ. The word مسلمات would become مسلماتِ .
+            2. If the word ends in the letter ن, all you have to do is drop the ن. For instance, the word مسلمون
+            becomes مسلمو.
+
+            | Plural 	| Pair   	| Singular 	|     	|
+            |--------	|--------	|----------	|-----	|
+            | مسلمات 	| مسلمتا 	| مسلمة    	| رفع 	|
+            | مسلمات 	| مسلمتي 	| مسلمة    	| نصب 	|
+            | مسلمات 	| مسلمتي 	| مسلمة    	| جر  	|
         """,
         "key_points": [
             "Words are heavy by default",
@@ -246,8 +264,11 @@ LESSONS = {
             other أفعالُ ناقصة) is not. It is considered part of the مبتدأ.
 """,
         "key_points": [
-                "A مجهول word is considered anonymous or unknown in a sentance",
-                "To determine if a word is passive, you must first find the action, then ask yourself: \"Do I know who performed the action?\""
+                "الأفعال الناقصة are incomplete in meaning",
+                "الأفعال الناقصة do not leave you with a complete thought, unlike normal الأفعال.",
+                "Sentences with الأفعال الناقصة are considered جمل اسمية",
+                "The part before 'was' (or any of the other sisters of كان) is مبتد, and the part after it is خبر/متعق بالخبر",
+                "While the 'is' is invisible in regular جمل اسمية, the 'was' (or any of the other أفعال الناقصة) is not."
         ]
     }
 }
