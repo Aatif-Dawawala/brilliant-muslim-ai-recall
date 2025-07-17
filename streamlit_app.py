@@ -140,15 +140,33 @@ LESSONS = {
         "title": "Light vs. Heavy",
         "content": """
             ### Understanding Light and Heavy Words
-            Words can either be light or heavy, with heavy being the default.
-            In order to make a word light, simply remove the ن at the end.
+            Lightness and heaviness are not from among the four properties of the اسم. Rather, the discussion of
+            light and heavy is a sub-topic that falls under status. Now that we have learned about the different
+            markers that we can use to determine status, we will learn about different variations and forms that
+            these markers can take.
 
-            For example:
-            - مسلمٌ <- مسلمُ
-            - مسلمان <- مسلما
-            - مسلمون <- مسلمو
+            Notice that every word in the مسلم chart ends in an ‘n’ sound, whether it be an ending sound or
+            combination. These words are considered heavy. **Heavy** is the **default**. To make a word light, all you
+            have to do is remove the ‘n’ sound at the end.
 
-            - Words are never light unless there is a specific reason for them to be.
+            | Plural 	| Pair   	| Singular 	|     	|
+            |--------	|--------	|----------	|-----	|
+            |  مسلمو 	|  مسلما 	|  مسلم    	| رفع 	|
+            |  مسلمي 	|  مسلمي 	|  مسلم    	| نصب 	|
+            |  مسلمي 	|  مسلمي 	|  مسلم    	| جر  	|
+
+            To get rid of the ن sound in Arabic, use the following rules.
+
+            1. If the word ends in a double accent (ْالتَّنْوِين), replace the double accent with a single حَرَكَة. For
+            instance, the word مسلمٌ would become مسلمُ. The word مسلمات would become مسلماتِ .
+            2. If the word ends in the letter ن, all you have to do is drop the ن. For instance, the word مسلمون
+            becomes مسلمو.
+
+            | Plural 	| Pair   	| Singular 	|     	|
+            |--------	|--------	|----------	|-----	|
+            | مسلمات 	| مسلمتا 	| مسلمة    	| رفع 	|
+            | مسلمات 	| مسلمتي 	| مسلمة    	| نصب 	|
+            | مسلمات 	| مسلمتي 	| مسلمة    	| جر  	|
         """,
         "key_points": [
             "Words are heavy by default",
@@ -193,6 +211,64 @@ LESSONS = {
                 "The 1st person pronouns have singular and plural forms.",
                 "The 2nd/3rd person pronouns have singular, dual, and plural forms.",
                 "There are three forms that pronouns can take: الضمير المستتر, الضمير المنفصل, الضمير المتصل"
+        ]
+    },
+        "lesson6": {
+        "title": "Introduction to الفعل المبني للمجهول",
+        "content": """
+            ### Introduction to الفعل المبني للمجهول
+            The passive فعل, or الفعل لمبنيُ للمجهول, is a فعل-form that is used to express the occurrence of an action
+            while keeping the doer of that action anonymous. In Arabic, مجهول literally means “unknown” or
+            “anonymous”. The sentence, “The cake was eaten,” for example, is considered مجهول, because the one 
+            who ate the cake is not known. The same goes for the sentence “The cake is eaten”. Both ماض and 
+            مضارع can be made مجهول.
+
+            To determine whether something is passive in either Arabic or English:
+            1. Find the action
+            2. Ask yourself: "Do I know who performed the action?"
+
+            If the answer is no, it is passive. Otherwise, it is active.
+""",
+        "key_points": [
+                "A مجهول word is considered anonymous or unknown in a sentance",
+                "To determine if a word is passive, you must first find the action, then ask yourself: \"Do I know who performed the action?\""
+        ]
+    },
+        "lesson7": {
+        "title": "Introduction to الأفعال الناقصة",
+        "content": """
+            ### Introduction to الأفعال الناقصة
+            الأفعالُ الناقصة are a set of أفعال that are incomplete in meaning. الأفعالُ الناقصة are also known as كانُ و أخواتها,
+            or “كان and her sisters”. This is because كان is the most commonly used فعلُ ناقص. Take a look at the list
+            below. Pay attention to the definitions.
+
+            1. كان, يكون&nbsp;&nbsp;To be...
+            2. أصبح, يصبح&nbsp;&nbsp;To become...
+            3. ظل, يظل&nbsp;&nbsp;To remain...
+            4. ما زال/لا يزال&nbsp;&nbsp;To still be...
+            5. ما دام&nbsp;&nbsp;As long as...
+            6. ليس&nbsp;&nbsp;Is not...
+
+            Notice that the أفعال above do not convey a complete thought. For example, were you to hear someone
+            say “كانَُ” or “He was...” you would be left with the questions “What/who was he?” Compare this to a
+            normal فعل, like “أَكَلَُ” or “He ate”. This is a complete sentence as it conveys a complete thought.
+
+            Because these أفعال are incomplete in meaning, they do not operate like a normal فعل. In fact, a sentence
+            that contains a فعلُ ناقص is not even considered a جملةُ فعلية. It is considered a جملةُ اسمية.
+
+            Just as we defined the part before “is” as a مبتدأ and the part after “is” as the خبر orمتعلقُ بالخبر in a regular
+            جملةُاسمية, in this new type of جملةُ اسمية that we are learning about, the part before “was” (or any of the
+            other sisters of كان) is the مبتدأ and the part after it is the خبر orمتعلقُ بالخبر.
+
+            A key difference, however, is that while the “is” in a regular جملةُ اسمية is invisible, the “was” (or any of the
+            other أفعالُ ناقصة) is not. It is considered part of the مبتدأ.
+""",
+        "key_points": [
+                "الأفعال الناقصة are incomplete in meaning",
+                "الأفعال الناقصة do not leave you with a complete thought, unlike normal الأفعال.",
+                "Sentences with الأفعال الناقصة are considered جمل اسمية",
+                "The part before 'was' (or any of the other sisters of كان) is مبتد, and the part after it is خبر/متعق بالخبر",
+                "While the 'is' is invisible in regular جمل اسمية, the 'was' (or any of the other أفعال الناقصة) is not."
         ]
     }
 }
