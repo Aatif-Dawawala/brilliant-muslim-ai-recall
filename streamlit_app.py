@@ -174,45 +174,6 @@ LESSONS = {
             "Words are never light unless there is a specific reason for them to be."
         ]
     },
-        "lesson4": {
-        "title": "Flexibility",
-        "content": """
-            ### Flexibility
-            Flexibility is a sub-category of status, and only pertains to words that have an ending sound (as opposed to ending combination).
-            - This means that flexibility only pertains to singular words.
-
-            There are three types of flexibility:
-            - Fully-flexible
-            - Partly-flexible
-            - Non-flexible
-        """,
-        "key_points": [
-                "Flexibility is a sub-category of status",
-                "Flexibility only pertains to singular words",
-                "Words may only be fully-flexible, partly-flexible, or non-flexible."
-        ]
-    },
-        "lesson5": {
-        "title": "Pronouns",
-        "content": """
-            ### Pronouns in Arabic
-            Arabic has 1st person, 2nd person, and 3rd person pronouns. The 1st person pronouns have the singular and plural form, and the 2nd/3rd person pronouns have singular, dual, and plural forms.   
-
-            Pronouns may take three forms:
-            - الضمير المستتر
-                - Pronouns within أفعال.
-            - الضمير المنفصل
-                - Pronouns independently standing by themselves.
-            - الضمير المتصل
-                - Attached pronouns.
-            """,
-        "key_points": [
-                "Arabic has 1st person, 2nd person, and 3rd person pronouns",
-                "The 1st person pronouns have singular and plural forms.",
-                "The 2nd/3rd person pronouns have singular, dual, and plural forms.",
-                "There are three forms that pronouns can take: الضمير المستتر, الضمير المنفصل, الضمير المتصل"
-        ]
-    },
         "lesson6": {
         "title": "Introduction to الفعل المبني للمجهول",
         "content": """
