@@ -254,7 +254,7 @@ if not st.session_state.hide_lesson:
 
 
 if not st.session_state.show_recall:
-    if st.button("Start Recall"):
+    if st.button("Test Your Knowledge!"):
         st.session_state.show_recall = True
         st.session_state.hide_lesson = True
         st.rerun()
@@ -265,7 +265,7 @@ else:
         "Type everything you recall from this lesson", height=200
     )
 
-    if st.button("Evaluate Response"):
+    if st.button("Results!"):
         with st.spinner("Evaluating..."):
             try:
                 result = evaluate_response_with_rag(user_input, st.session_state.lesson, model_choice)
