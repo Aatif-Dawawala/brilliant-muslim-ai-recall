@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import json
 from typing import Dict
 
@@ -9,6 +10,8 @@ from pydantic_ai.providers.openai import OpenAIProvider
 from pydantic_ai.models.gemini import GeminiModel
 from pydantic_ai.providers.google_gla import GoogleGLAProvider
 
+load_dotenv()
+
 class OutputFormat(BaseModel):
     score: int
     correct_points: list[str]
@@ -17,11 +20,11 @@ class OutputFormat(BaseModel):
     generated_feedback: str
     rewritten_answer: str
 
-
 openai_llm = OpenAIModel(
     'gpt-4.1',
     provider=OpenAIProvider(api_key=os.getenv("OPENAI_API_KEY"))
 )
+
 
 openaiAgent = Agent(openai_llm, instructions="You are an expert Arabic language tutor.")
 
