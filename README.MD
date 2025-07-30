@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-454377.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/read-the%20docs-4d6a91.svg)](https://github.com/aatif-dawawala/arabic-lesson-eval/wiki)
-[![Streamlit Cloud](https://img.shields.io/badge/demo-Open%20App-14ae73.svg)](https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/)
+[![Streamlit Cloud](https://img.shields.io/badge/demo-Open%20App-14ae73.svg)](https://brilliant-muslim-ai-recall.streamlit.app/)
 
 An **interactive, AI-powered recall trainer** built for learners of the *Bayyinah Institute Dream* curriculum. Type what you remember, let the app retrieve the relevant material, and get instant formative feedback.
 
@@ -54,7 +54,7 @@ Brilliant Muslim’s **Arabic Lesson Evaluator** helps students shift from passi
 
 ## Live Demo
 
-> **Try it now →** [https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/](https://arabic-leappn-eval-bo4juht5vqqzqtgfsayval.streamlit.app/)
+> **Try it now →** [https://brilliant-muslim-ai-recall.streamlit.app/](https://brilliant-muslim-ai-recall.streamlit.app/)
 
 ## Getting Started
 
@@ -100,7 +100,7 @@ The app will open at [http://localhost:8501](http://localhost:8501).
 └──────┬─────────┘
        │ relevant docs
 ┌──────▼─────────┐
-│   LLM Scorer   │  ←– GPT-4o / Gemini
+│   LLM Scorer   │  ←– Model
 └──────┬─────────┘
        │ feedback JSON
 ┌──────▼─────────┐
