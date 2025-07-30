@@ -100,7 +100,7 @@ The app will open at [http://localhost:8501](http://localhost:8501).
 └──────┬─────────┘
        │ relevant docs
 ┌──────▼─────────┐
-│   LLM Scorer   │  ←– Model
+│   LLM Scorer   │  ←– model
 └──────┬─────────┘
        │ feedback JSON
 ┌──────▼─────────┐
