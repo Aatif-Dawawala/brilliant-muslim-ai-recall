@@ -18,12 +18,11 @@ except Exception as e:
     print(e)
 
 
-def append_example_mongo(prompt: str, response: dict, user_response, lesson, uuid):
+def append_example_mongo(prompt: str, response: dict, user_response, lesson):
     collection.insert_one({"prompt" : prompt,
                            "response" : json.dumps(response, ensure_ascii=False),
                             "user_response" : user_response,
-                            "lesson": lesson,
-                            "uuid": uuid
+                            "lesson": lesson
                             })
     
 

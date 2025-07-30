@@ -9,12 +9,8 @@ from typing import List
 from prompt_templates import build_rag_prompt
 from evaluation_logger import append_example_mongo
 from model_switcher import evaluate, OutputFormat
-from streamlit_cookies_controller import CookieController
-import uuid
 
 load_dotenv()
-
-
 
 VECTOR_PATH = "./rag/vector_store"
 
@@ -33,7 +29,7 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) ->
 
     prompt = build_rag_prompt(user_response, retrieved_text, key_points)
     result = evaluate(prompt, model_choice)
-    append_example_mongo(prompt, result, user_response, lesson["title"], controller.get('uuidGenerated'))
+    append_example_mongo(prompt, result, user_response, lesson["title"])
     return result
 
 API_URL = "http://127.0.0.1:8000/evaluate"
@@ -240,17 +236,6 @@ LESSONS = {
 
 st.set_page_config(page_title="Arabic Lesson Recall", layout="wide")
 st.title("Arabic Lesson Recall")
-
-controller = CookieController()
-
-if "uuid_generated" not in st.session_state:
-    st.session_state.uuid_generated = False
-
-if not st.session_state.uuid_generated:
-    uuidGenerated = str(uuid.uuid4())
-    print(uuidGenerated)
-    controller.set('uuidGenerated', uuidGenerated)
-    st.session_state.uuid_generated = True
 
 # Initialize recall flag
 if "show_recall" not in st.session_state:
