@@ -199,7 +199,7 @@ LESSONS = {
         "title": "Introduction to الأفعال الناقصة",
         "content": """
             ### Introduction to الأفعال الناقصة
-            الأفعالُ الناقصة are a set of أفعال that are incomplete in meaning. الأفعالُ الناقصة are also known as كانُ و أخواتها,
+            الأفعالُ الناقصة are a set of أفعال that are incomplete in meaning. الأفعالُ الناقصة are also known as كان و أخواتها,
             or “كان and her sisters”. This is because كان is the most commonly used فعلُ ناقص. Take a look at the list
             below. Pay attention to the definitions.
 
