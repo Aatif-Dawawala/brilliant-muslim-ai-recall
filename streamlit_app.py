@@ -245,7 +245,8 @@ if "hide_lesson" not in st.session_state:
     st.session_state.hide_lesson = False
 
 # Select
-model_choice = "Gemini"
+
+
 
 if not st.session_state.hide_lesson:
     lesson_id = st.selectbox("Choose a lesson:", options=list(LESSONS.keys()), format_func=lambda k: LESSONS[k]["title"])
@@ -259,6 +260,8 @@ if not st.session_state.show_recall:
         st.session_state.hide_lesson = True
         st.rerun()
 else:
+    if st.checkbox("Show advanced settings"):
+        model_choice = st.selectbox("Model", ["Gemini", "OpenAI"])
     # Input
     st.subheader("What do you remember?")
     user_input = st.text_area(
