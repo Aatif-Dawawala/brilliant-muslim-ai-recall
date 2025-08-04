@@ -14,12 +14,18 @@ load_dotenv()
 
 VECTOR_PATH = "./rag/vector_store"
 
-def retrieve_chunks(user_response, k=4):
+@st.cache_resource
+def connect_to_database():
     db = FAISS.load_local(
-        VECTOR_PATH, 
+        VECTOR_PATH,
         OpenAIEmbeddings(),
         allow_dangerous_deserialization=True
     )
+
+    return db
+
+def retrieve_chunks(user_response, k=4):
+    db = connect_to_database()
     results = db.similarity_search(user_response, k=k)
     return "\n---\n".join([doc.page_content for doc in results])
 
@@ -260,6 +266,7 @@ if not st.session_state.show_recall:
         st.session_state.hide_lesson = True
         st.rerun()
 else:
+    model_choice = "Gemini"
     if st.checkbox("Show advanced settings"):
         model_choice = st.selectbox("Model", ["Gemini", "OpenAI"])
     # Input
