@@ -9,7 +9,7 @@ uri = os.getenv("uri")
 client = MongoClient(uri, server_api=ServerApi("1"))
 
 database = client["brilliant-muslim-ai-recall"]
-collection = database["logged-data"]
+collection = database["logged-demo-data"]
 
 try:
     client.admin.command('ping')
