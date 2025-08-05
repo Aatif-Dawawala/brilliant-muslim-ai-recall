@@ -30,8 +30,8 @@ def retrieve_chunks(user_response, k=4):
     results = db.similarity_search(user_response, k=k)
     return "\n---\n".join([doc.page_content for doc in results])
 
-def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) -> dict:
-    retrieved_text = retrieve_chunks(user_response)
+def evaluate_response_with_rag(user_response: str, lesson, model_choice: str, k) -> dict:
+    retrieved_text = retrieve_chunks(user_response, k)
     key_points = lesson["key_points"]
 
     prompt = build_rag_prompt(user_response, retrieved_text, key_points)
@@ -67,6 +67,7 @@ if not st.session_state.show_recall:
 else:
     with st.expander("Show advanced settings"):
         model_choice = st.selectbox("Model", ["Gemini", "OpenAI"])
+        chunks = st.slider("Number of passages (chunks retrieved)", 1, 10, 4)
     # Input
     st.subheader("What do you remember?")
     user_input = st.text_area(
@@ -76,7 +77,7 @@ else:
     if st.button("Results!"):
         with st.spinner("Evaluating..."):
             try:
-                result, retrieved_text = evaluate_response_with_rag(user_input, st.session_state.lesson, model_choice)
+                result, retrieved_text = evaluate_response_with_rag(user_input, st.session_state.lesson, model_choice, chunks)
                 print(result)
             
                 # Score + Performance
