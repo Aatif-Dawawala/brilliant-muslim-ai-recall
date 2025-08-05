@@ -9,6 +9,7 @@ from typing import List
 from prompt_templates import build_rag_prompt
 from evaluation_logger import append_example_mongo
 from model_switcher import evaluate, OutputFormat
+from data.lessons import serve_lessons
 
 load_dotenv()
 
@@ -36,209 +37,11 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str) ->
     prompt = build_rag_prompt(user_response, retrieved_text, key_points)
     result = evaluate(prompt, model_choice)
     append_example_mongo(prompt, result, user_response, lesson["title"])
-    return result
+    return result, retrieved_text
 
 API_URL = "http://127.0.0.1:8000/evaluate"
 
-LESSONS = {
-    "lesson1": {
-        "title": "الإعراب",
-        "content": """
-            ### الإعراب
-            #### Introduction
-            Status is the first of the four properties. Status has to do with the role an اسم is playing in a sentence. In
-            Arabic, an اسم can have one of three statuses. The status depends on the role the اسم is playing.
-
-            #### الإعراب
-            Status is the first of the four properties. Status has to do with the role an اسم is playing in a sentence. In
-            Arabic, an اسم can have one of three statuses. The status depends on the role the اسم is playing.
-
-            ##### رفع
-            The doer is the one who carries out the action. Take a look at the following examples. 
-
-            **I ate too much chocolate.**
-
-            *The action here is “ate”. Now ask yourself who it was who ate. It is the speaker “I” who did the 
-            action. In this sentence “I” is the doer.*
-
-            **My tooth in aching.**
-
-            *The action here is “aching”. Now asking yourself what is doing the aching. It is the tooth. In this 
-            sentence “tooth” is the doer.*
-
-            **The dentist gave me a filling.**
-
-            *The action here is “gave”. Now ask yourself who is the one who gave. It is the dentist. In this 
-            sentence, “dentist” is the doer.*
-
-            When searching for the doer in a sentence, follow a two-step process: 
-            1. Identify the action
-            2. Ask yourself “Who is doing the action?”
-
-            Note that it is possible for the doer to be non-human. 
-
-            رفع is also known as the default status. If there is no reason for an اسم to be put in another status, it
-            remains in the رفع status.
-
-            The doer is always in the رَفْعٌ  status. The way you say “in the رَفْع status” in Arabic is مرفوع. *Memorize* this 
-            term and use it.
-
-            #### نصب
-            The detail refers to additional information about the action. When looking for a detail in a sentence, 
-            follow a two-step process: 
-            1. Find the action and the doer
-            2. Everything else in the sentence is a detail
-
-            The detail is always in the نصب status. The way you say “in the نَصْب status” in Arabic is منصوب. *Memorize* 
-            this term and use it. 
-
-            #### جر
-            This is the status of words that come after "of".
-            """,
-
-        "key_points": [
-            "الرفع is primarily used for the doer (the one who carries out the action).",
-            "النصب is primarily used for the the detail in a sentence. Once the action and the doer are found, everything else in the sentence is a detail.",
-            "الجر is primarily used after 'of'."
-        ]
-    },
-        "lesson2": {
-        "title": "How to tell status",
-        "content": """
-            ### How to Tell Status
-            In English, we were able to determine the status based on the meaning. In Arabic, however, status is 
-            determined by a marker or sign at the end of the word.  
-
-            As you know, there are three statuses in Arabic. There are, however, more than three status markers or 
-            signs. In other words, there are more than three ways that the status of a word can show. This is 
-            because each status can show in different ways depending on the number and the gender of the word.  
-
-            It is important to keep in mind that whenever you are trying to figure out the status of an Ism you must 
-            look at the ending of the word. There are two types of endings we will see, **ending sounds** (vowel 
-            change at the end) and **ending combinations** (letters added to the end of a word). 
-
-            The number/gender variations are singular, pair, masculine plural, and feminine plural.  Take a look at 
-            the charts below. Notice how each status looks different depending on the number and the gender of 
-            the word.   
-
-            The word مسلم is the base. Anything beyond the last letter (in this case, the م) is part of the status marker.
-
-            | Plural | Pair   | Singular |     |
-            |--------|--------|----------|-----|
-            | مسلمون | مسلمان | مسلم     | رفع |
-            | مسلمين | مسلمين | مسلم     | نصب |
-            | مسلمين | مسلمين | مسلم     | جر  |
-
-            | Plural Feminine | Pair Feminine | Singular Feminine |     |
-            |-----------------|---------------|-------------------|-----|
-            | مسلمات          | مسلمتان       | مسلمة             | رفع |
-            | مسلمات          | مسلمتين       | مسلمة             | نصب |
-            | مسلمات          | مسلتين        | مسلمة             | جر  |
-        """,
-        "key_points": [
-            "In Arabic, status is determined by a marker or sign at the end of words",
-            "While there are 3 cases, there are more than 3 case markers or signs.",
-            "When finding the status of a word, there are two things to pay attention to, ending sounds and ending combinations.",
-            "The number/gender variations consist of singular, pair, masculine plural, and feminine plural."           
-            ]
-    },
-        "lesson3": {
-        "title": "Light vs. Heavy",
-        "content": """
-            ### Understanding Light and Heavy Words
-            Lightness and heaviness are not from among the four properties of the اسم. Rather, the discussion of
-            light and heavy is a sub-topic that falls under status. Now that we have learned about the different
-            markers that we can use to determine status, we will learn about different variations and forms that
-            these markers can take.
-
-            Notice that every word in the مسلم chart ends in an ‘n’ sound, whether it be an ending sound or
-            combination. These words are considered heavy. **Heavy** is the **default**. To make a word light, all you
-            have to do is remove the ‘n’ sound at the end.
-
-            | Plural 	| Pair   	| Singular 	|     	|
-            |--------	|--------	|----------	|-----	|
-            |  مسلمو 	|  مسلما 	|  مسلم    	| رفع 	|
-            |  مسلمي 	|  مسلمي 	|  مسلم    	| نصب 	|
-            |  مسلمي 	|  مسلمي 	|  مسلم    	| جر  	|
-
-            To get rid of the ن sound in Arabic, use the following rules.
-
-            1. If the word ends in a double accent (ْالتَّنْوِين), replace the double accent with a single حَرَكَة. For
-            instance, the word مسلمٌ would become مسلمُ. The word مسلمات would become مسلماتِ .
-            2. If the word ends in the letter ن, all you have to do is drop the ن. For instance, the word مسلمون
-            becomes مسلمو.
-
-            | Plural 	| Pair   	| Singular 	|     	|
-            |--------	|--------	|----------	|-----	|
-            | مسلمات 	| مسلمتا 	| مسلمة    	| رفع 	|
-            | مسلمات 	| مسلمتي 	| مسلمة    	| نصب 	|
-            | مسلمات 	| مسلمتي 	| مسلمة    	| جر  	|
-        """,
-        "key_points": [
-            "Words are heavy by default",
-            "To make a word light, they ن must be removed."
-            "Words are never light unless there is a specific reason for them to be."
-        ]
-    },
-        "lesson6": {
-        "title": "Introduction to الفعل المبني للمجهول",
-        "content": """
-            ### Introduction to الفعل المبني للمجهول
-            The passive فعل, or الفعل لمبنيُ للمجهول, is a فعل-form that is used to express the occurrence of an action
-            while keeping the doer of that action anonymous. In Arabic, مجهول literally means “unknown” or
-            “anonymous”. The sentence, “The cake was eaten,” for example, is considered مجهول, because the one 
-            who ate the cake is not known. The same goes for the sentence “The cake is eaten”. Both ماض and 
-            مضارع can be made مجهول.
-
-            To determine whether something is passive in either Arabic or English:
-            1. Find the action
-            2. Ask yourself: "Do I know who performed the action?"
-
-            If the answer is no, it is passive. Otherwise, it is active.
-""",
-        "key_points": [
-                "A مجهول word is considered anonymous or unknown in a sentance",
-                "To determine if a word is passive, you must first find the action, then ask yourself: \"Do I know who performed the action?\""
-        ]
-    },
-        "lesson7": {
-        "title": "Introduction to الأفعال الناقصة",
-        "content": """
-            ### Introduction to الأفعال الناقصة
-            الأفعالُ الناقصة are a set of أفعال that are incomplete in meaning. الأفعالُ الناقصة are also known as كان و أخواتها,
-            or “كان and her sisters”. This is because كان is the most commonly used فعلُ ناقص. Take a look at the list
-            below. Pay attention to the definitions.
-
-            1. كان, يكون&nbsp;&nbsp;To be...
-            2. أصبح, يصبح&nbsp;&nbsp;To become...
-            3. ظل, يظل&nbsp;&nbsp;To remain...
-            4. ما زال/لا يزال&nbsp;&nbsp;To still be...
-            5. ما دام&nbsp;&nbsp;As long as...
-            6. ليس&nbsp;&nbsp;Is not...
-
-            Notice that the أفعال above do not convey a complete thought. For example, were you to hear someone
-            say “كانَُ” or “He was...” you would be left with the questions “What/who was he?” Compare this to a
-            normal فعل, like “أَكَلَُ” or “He ate”. This is a complete sentence as it conveys a complete thought.
-
-            Because these أفعال are incomplete in meaning, they do not operate like a normal فعل. In fact, a sentence
-            that contains a فعلُ ناقص is not even considered a جملةُ فعلية. It is considered a جملةُ اسمية.
-
-            Just as we defined the part before “is” as a مبتدأ and the part after “is” as the خبر orمتعلقُ بالخبر in a regular
-            جملةُاسمية, in this new type of جملةُ اسمية that we are learning about, the part before “was” (or any of the
-            other sisters of كان) is the مبتدأ and the part after it is the خبر orمتعلقُ بالخبر.
-
-            A key difference, however, is that while the “is” in a regular جملةُ اسمية is invisible, the “was” (or any of the
-            other أفعالُ ناقصة) is not. It is considered part of the مبتدأ.
-""",
-        "key_points": [
-                "الأفعال الناقصة are incomplete in meaning",
-                "الأفعال الناقصة do not leave you with a complete thought, unlike normal الأفعال.",
-                "Sentences with الأفعال الناقصة are considered جمل اسمية",
-                "The part before 'was' (or any of the other sisters of كان) is مبتد, and the part after it is خبر/متعق بالخبر",
-                "While the 'is' is invisible in regular جمل اسمية, the 'was' (or any of the other أفعال الناقصة) is not."
-        ]
-    }
-}
+LESSONS = serve_lessons()
 
 st.set_page_config(page_title="Arabic Lesson Recall", layout="wide")
 st.title("Arabic Lesson Recall")
@@ -262,7 +65,6 @@ if not st.session_state.show_recall:
         st.session_state.hide_lesson = True
         st.rerun()
 else:
-    model_choice = "Gemini"
     with st.expander("Show advanced settings"):
         model_choice = st.selectbox("Model", ["Gemini", "OpenAI"])
     # Input
@@ -274,7 +76,7 @@ else:
     if st.button("Results!"):
         with st.spinner("Evaluating..."):
             try:
-                result = evaluate_response_with_rag(user_input, st.session_state.lesson, model_choice)
+                result, retrieved_text = evaluate_response_with_rag(user_input, st.session_state.lesson, model_choice)
                 print(result)
             
                 # Score + Performance
@@ -329,6 +131,11 @@ else:
                 st.markdown("---")
                 st.markdown("### Suggested Improved Answer")
                 st.info(result["rewritten_answer"])
+
+                st.markdown("---")
+
+                with st.expander("Retrieved Material"):
+                    st.text(retrieved_text)
 
             except Exception as e:
                 st.error(f"Error: {e}")
