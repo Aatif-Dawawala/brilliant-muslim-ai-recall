@@ -1,8 +1,6 @@
 import csv
 
-file_name = "eval_results.csv"
-
-def get_average():
+def get_average(file_name = "eval_results.csv"):
     scores = []
     sum = 0
 
@@ -16,4 +14,3 @@ def get_average():
         
     return sum/len(scores)
 
-print(f"The average score is: {round(get_average(), 2)}")
