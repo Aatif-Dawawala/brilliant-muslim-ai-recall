@@ -9,7 +9,7 @@ uri = os.getenv("uri")
 client = MongoClient(uri, server_api=ServerApi("1"))
 
 database = client["brilliant-muslim-ai-recall"]
-collection = database["logged-demo-data"]
+collection = database["logged-data"]
 
 try:
     client.admin.command('ping')
@@ -32,6 +32,16 @@ def append_example(prompt: str, response: dict, path: str = "eval_dataset.csv"):
     row = {
         "prompt": prompt,
         "response": json.dumps(response, ensure_ascii=False),
+    }
+    pd.DataFrame([row]).to_csv(
+        path, mode="a", header=not os.path.exists(path), index=False
+    )
+
+def append_prompt_data(retrieved_text: str, key_points_text: str, user_response: str, path: str = "prompt_dataset.csv"):
+    row = {
+        "user_response": user_response,
+        "key_points_text": key_points_text,
+        "retrieved text": retrieved_text
     }
     pd.DataFrame([row]).to_csv(
         path, mode="a", header=not os.path.exists(path), index=False

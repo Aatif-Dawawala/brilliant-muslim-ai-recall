@@ -2,6 +2,7 @@ import vertexai
 import pandas as pd
 from vertexai.evaluation import EvalTask, PointwiseMetric, PointwiseMetricPromptTemplate
 from google.cloud import aiplatform
+import csv
 
 PROJECT_ID = "model-eval-463217"
 
@@ -70,6 +71,7 @@ responses = [
 ]
 
 eval_dataset = pd.read_csv("eval_dataset.csv")
+file_name = "eval_results.csv"
 
 eval_task = EvalTask(
     dataset=eval_dataset,
@@ -81,10 +83,27 @@ pointwise_result = eval_task.evaluate()
 
 print(pointwise_result.metrics_table)
 
-with open("eval_results.txt", "w") as f:
-    f.write(pointwise_result.metrics_table.to_string())
+with open(file_name, "w") as f:
+    f.write(pointwise_result.metrics_table.to_csv(index=False))
 
 aiplatform.ExperimentRun(
     run_name=pointwise_result.metadata["experiment_run"],
     experiment = pointwise_result.metadata["experiment"],
 ).delete()
+
+def get_average():
+    scores = []
+    sum = 0
+
+    with open(file_name, 'r') as file: 
+        dict_reader = csv.DictReader(file)
+        for row_dict in dict_reader:
+            scores.append(float(row_dict["custom_text-quality/score"]))
+
+    for temp in scores:
+        sum += temp
+        
+    return sum/len(scores)
+
+print(f"The average score is: {round(get_average(), 2)}")
+
