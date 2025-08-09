@@ -21,7 +21,7 @@ def get_collection():
     except Exception as e:
         raise ConnectionError(f"Failed to connect to MongoDB: {e}")
     database = client["brilliant-muslim-ai-recall"]
-    return database["logged-data"]
+    return database["logged-demo-data"]
 
 
 def append_example_mongo(prompt: str, response: dict, user_response, lesson):
