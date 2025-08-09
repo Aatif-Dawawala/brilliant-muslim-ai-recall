@@ -63,12 +63,6 @@ custom_text_quality = PointwiseMetric(
     ),
 )
 
-responses = [
-    """
-    {'score': 100, 'correct_points': ["You correctly identified the three cases in Arabic: Raf', Nasb, and Jarr.", "You correctly stated that Raf' is used for the subject, predicate, and doer.", 'You correctly stated that Jarr is used after prepositions.', 'You correctly stated that Nasb is used for the done-to and after certain huruf.'], 'incorrect_points': [], 'missed_points': [], 'generated_feedback': 'Excellent work! You have perfectly recalled all the key information about the three Arabic cases and their primary uses. Your answer is complete and accurate based on the provided material. Keep up the great work!', 'rewritten_answer': "Arabic has 3 cases: Raf', nasb, and jarr. Raf' is used for the subject, the predicate, and the doer. Jarr is used after prepositions. Nasb is used for the done-to and after certain huruf."}
-    """,
-]
-
 
 def main(dataset_path: str, project_id: str, results_path: str) -> None:
     """Run evaluation on a dataset and store the results.
