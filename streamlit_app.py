@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 from typing import List
 from prompt_templates import build_rag_prompt
-from evaluation_logger import append_example_mongo
+from evaluation_logger import append_example_mongo, append_example, append_prompt_data
 from model_switcher import evaluate, OutputFormat
 from data.lessons import serve_lessons
 
@@ -37,6 +37,8 @@ def evaluate_response_with_rag(user_response: str, lesson, model_choice: str, k)
     prompt = build_rag_prompt(user_response, retrieved_text, key_points)
     result = evaluate(prompt, model_choice)
     append_example_mongo(prompt, result, user_response, lesson["title"])
+    append_example(prompt, result)
+    append_prompt_data(retrieved_text, key_points, user_response)
     return result, retrieved_text
 
 API_URL = "http://127.0.0.1:8000/evaluate"
@@ -141,7 +143,7 @@ else:
             except Exception as e:
                 st.error(f"Error: {e}")
     
-    if st.button("Show lesson"):
+    if st.button("Show lessons"):
         st.session_state.hide_lesson = False
         st.session_state.show_recall = False
         st.rerun()
