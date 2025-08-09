@@ -4,26 +4,36 @@ import json
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-uri = os.getenv("uri")
 
-client = MongoClient(uri, server_api=ServerApi("1"))
+def get_collection():
+    """Return the MongoDB collection for logging.
 
-database = client["brilliant-muslim-ai-recall"]
-collection = database["logged-data"]
-
-try:
-    client.admin.command('ping')
-    print("Pinged!")
-except Exception as e:
-    print(e)
+    Raises:
+        ValueError: If the MongoDB URI is not set.
+        ConnectionError: If connection to MongoDB fails.
+    """
+    uri = os.getenv("uri")
+    if not uri:
+        raise ValueError("MongoDB URI is not set in environment variable 'uri'")
+    try:
+        client = MongoClient(uri, server_api=ServerApi("1"))
+        client.admin.command('ping')
+    except Exception as e:
+        raise ConnectionError(f"Failed to connect to MongoDB: {e}")
+    database = client["brilliant-muslim-ai-recall"]
+    return database["logged-data"]
 
 
 def append_example_mongo(prompt: str, response: dict, user_response, lesson):
-    collection.insert_one({"prompt" : prompt,
-                           "response" : json.dumps(response, ensure_ascii=False),
-                            "user_response" : user_response,
-                            "lesson": lesson
-                            })
+    try:
+        collection = get_collection()
+    except Exception as e:
+        print(f"Could not log to MongoDB: {e}")
+        return
+    collection.insert_one({"prompt": prompt,
+                           "response": json.dumps(response, ensure_ascii=False),
+                           "user_response": user_response,
+                           "lesson": lesson})
     
 
 
