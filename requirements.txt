@@ -14,3 +14,4 @@ streamlit
 google-genai
 pydantic-ai
 pymongo
+pytest
