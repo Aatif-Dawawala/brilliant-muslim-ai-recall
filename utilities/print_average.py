@@ -14,3 +14,6 @@ def get_average(file_name = "eval_results.csv"):
         
     return sum/len(scores)
 
+if __name__ == "__main__":
+    print(get_average())
+
