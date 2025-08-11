@@ -9,7 +9,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
-from evaluation_logger import append_example
+from eval.evaluation_logger import append_example
 
 def test_append_example():
     file_path = "temp_eval_dataset.csv"
