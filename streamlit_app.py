@@ -6,9 +6,9 @@ from langchain_openai import OpenAIEmbeddings
 import os
 from dotenv import load_dotenv
 from typing import List
-from prompt_templates import build_rag_prompt
-from evaluation_logger import append_example_mongo, append_example, append_prompt_data
-from model_switcher import evaluate, OutputFormat
+from data.prompt_templates import build_rag_prompt
+from eval.evaluation_logger import append_example_mongo, append_example, append_prompt_data
+from services.model_switcher import evaluate, OutputFormat
 from data.lessons import serve_lessons
 
 load_dotenv()

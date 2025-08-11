@@ -6,8 +6,13 @@ import vertexai
 import pandas as pd
 from vertexai.evaluation import EvalTask, PointwiseMetric, PointwiseMetricPromptTemplate
 from google.cloud import aiplatform
-from utilities.print_average import get_average
 import csv
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
+
+from utilities.print_average import get_average
 
 custom_text_quality = PointwiseMetric(
     metric="custom_text-quality",
@@ -95,6 +100,8 @@ def main(dataset_path: str, project_id: str, results_path: str) -> None:
     print(pointwise_result.metrics_table)
 
     try:
+        print(os.listdir())
+        print(os.getcwd())
         with open(results_path, "w") as f:
             f.write(pointwise_result.metrics_table.to_csv(index=False))
     except OSError as exc:
@@ -117,7 +124,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dataset",
         dest="dataset_path",
-        default=os.getenv("DATASET_PATH", "eval_dataset.csv"),
+        default=os.getenv("DATASET_PATH", "data/eval_dataset.csv"),
         help="Path to the evaluation dataset CSV",
     )
     parser.add_argument(
@@ -129,7 +136,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--results",
         dest="results_path",
-        default=os.getenv("RESULTS_PATH", "eval_results.csv"),
+        default=os.getenv("RESULTS_PATH", "data/eval_results.csv"),
         help="File path to write evaluation results",
     )
 
