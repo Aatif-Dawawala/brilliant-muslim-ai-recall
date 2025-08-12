@@ -7,6 +7,7 @@ import pandas as pd
 from vertexai.evaluation import EvalTask, PointwiseMetric, PointwiseMetricPromptTemplate
 from google.cloud import aiplatform
 import csv
+import json
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
@@ -67,6 +68,11 @@ custom_text_quality = PointwiseMetric(
         },
     ),
 )
+
+metrics_path = "eval/metrics.json"
+
+with open(metrics_path, 'r') as f:
+    metric_data = json.load(f)
 
 
 def main(dataset_path: str, project_id: str, results_path: str) -> None:
