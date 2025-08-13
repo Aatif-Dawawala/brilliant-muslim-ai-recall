@@ -15,3 +15,5 @@ google-genai
 pydantic-ai
 pymongo
 pytest
+pandas
+google-cloud-aiplatform
