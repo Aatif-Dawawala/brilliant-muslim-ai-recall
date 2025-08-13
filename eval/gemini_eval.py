@@ -7,6 +7,7 @@ import pandas as pd
 from vertexai.evaluation import EvalTask, PointwiseMetric, PointwiseMetricPromptTemplate
 from google.cloud import aiplatform
 import csv
+import json
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
@@ -14,59 +15,27 @@ sys.path.append(parent_dir)
 
 from utilities.print_average import get_average
 
-custom_text_quality = PointwiseMetric(
-    metric="custom_text-quality",
-    metric_prompt_template=PointwiseMetricPromptTemplate(
-        criteria={
-            "comprehensibility": (
-                
-                    "The AI model does not talk in difficult grammar jargon and hard to understand text, but rather talks to the user "
-                    "at an understandable and basic level. Arabic grammar terms are primarily used as opposed to English ones. Sentences would be comprehensible by a user "
-                    "who doesn't use English as their primary language. The text isn't overcomplicated or confusing, but rather is simple and clear to the reader." 
-                
-            ),
-            "gentleness": (
-                 
-                    "The text does not come across as scolding the user or being overly harsh with them, rather it is gentle and encouraging. The text is encouraging and excites the learner to "
-                    "study further rather than discouraging them or making them feel unworthy. The text offers realistic feedback and doesn't sugarcoat mistakes, while simultaneously being gentle in its "
-                    "approach. The user will come away from reading the text feeling motivated and encouraged."
-                
-            ),
-            "accuracy": (
-                 
-                    "The text is accurate in its feedback. It does not illogically say the user made a mistake where they didn't, and doesn't illogically "
-                    "expect the user to know something unrealistic. The text is accurate to the rules of Arabic grammar, and its critiques of the user "
-                    "are accurate based on the user input. The text should not include critiques just for the sake of having critiques. If there are no "
-                    "critiques the text should reflect that, and if there are legitimate crtiques, the text should reflect that."
-                
-            ),
-            "fluency": (
+def generate_metrics():
 
-                    "Sentences flow smoothly and are easy to read, avoiding awkward"
-                    " phrasing or run-on sentences. Ideas and sentences connect"
-                    " logically, using transitions effectively where needed."    
-                            
-            ),
-            "constructiveness": (
+    metrics_path = "eval/metrics.json"
 
-                    "The feedback given is useful and accurate. The feedback directly"
-                    " references mistakes the user made (or things done well). If mistakes"
-                    " were made, the model corrects them and outputs feedback on how to "
-                    "avoid the mistake going forward."
+    metrics = []
 
+    with open(metrics_path, 'r') as f:
+        metric_data = json.load(f)
+
+    for i in range(len(metric_data)):
+        
+        metrics.append(PointwiseMetric(
+                metric=metric_data[i][0],
+                metric_prompt_template=PointwiseMetricPromptTemplate(
+                    criteria=metric_data[i][1],
+                    rating_rubric=metric_data[i][2]
+                )
             )
-        },
-        rating_rubric={
-            
-                "5": "(Very good). Exceptionally clear, coherent, fluent, and concise. Fully adheres to instructions and stays grounded.",
-                "4": "(Good). Well-written, coherent, and fluent. Mostly adheres to instructions and stays grounded. Minor room for improvement.",
-                "3": "(Ok). Adequate writing with decent coherence and fluency. Partially fulfills instructions and may contain minor ungrounded information. Could be more concise.",
-                "2": "(Bad). Poorly written, lacking coherence and fluency. Struggles to adhere to instructions and may include ungrounded information. Issues with conciseness.",
-                "1": "(Very bad). Very poorly written, incoherent, and non-fluent. Fails to follow instructions and contains substantial ungrounded information. Severely lacking in conciseness."
-            
-        },
-    ),
-)
+        )
+
+    return metrics
 
 
 def main(dataset_path: str, project_id: str, results_path: str) -> None:
@@ -92,7 +61,7 @@ def main(dataset_path: str, project_id: str, results_path: str) -> None:
 
     eval_task = EvalTask(
         dataset=eval_dataset,
-        metrics=[custom_text_quality],
+        metrics=generate_metrics(),
         experiment="myexperiment",
     )
 

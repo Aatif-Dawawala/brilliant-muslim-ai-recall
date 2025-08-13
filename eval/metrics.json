@@ -1,0 +1,21 @@
+[
+    [
+        "custom_text-quality", 
+        {
+                "comprehensibility": "The AI model does not talk in difficult grammar jargon and hard to understand text, but rather talks to the user at an understandable and basic level. Arabic grammar terms are primarily used as opposed to English ones. Sentences would be comprehensible by a user who doesn't use English as their primary language. The text isn't overcomplicated or confusing, but rather is simple and clear to the reader.", 
+                "gentleness": "The text does not come across as scolding the user or being overly harsh with them, rather it is gentle and encouraging. The text is encouraging and excites the learner to study further rather than discouraging them or making them feel unworthy. The text offers realistic feedback and doesn't sugarcoat mistakes, while simultaneously being gentle in its approach. The user will come away from reading the text feeling motivated and encouraged.",
+                "accuracy": "The text is accurate in its feedback. It does not illogically say the user made a mistake where they didn't, and doesn't illogically expect the user to know something unrealistic. The text is accurate to the rules of Arabic grammar, and its critiques of the user are accurate based on the user input. The text should not include critiques just for the sake of having critiques. If there are no critiques the text should reflect that, and if there are legitimate crtiques, the text should reflect that.",
+                "fluency": "Sentences flow smoothly and are easy to read, avoiding awkward phrasing or run-on sentences. Ideas and sentences connect logically, using transitions effectively where needed.",
+                "constructiveness": "The feedback given is useful and accurate. The feedback directly references mistakes the user made (or things done well). If mistakes were made, the model corrects them and outputs feedback on how to avoid the mistake going forward."
+        },
+        {
+            "5": "(Very good). Exceptionally clear, coherent, fluent, and concise. Fully adheres to instructions and stays grounded.",
+            "4": "(Good). Well-written, coherent, and fluent. Mostly adheres to instructions and stays grounded. Minor room for improvement.",
+            "3": "(Ok). Adequate writing with decent coherence and fluency. Partially fulfills instructions and may contain minor ungrounded information. Could be more concise.",
+            "2": "(Bad). Poorly written, lacking coherence and fluency. Struggles to adhere to instructions and may include ungrounded information. Issues with conciseness.",
+            "1": "(Very bad). Very poorly written, incoherent, and non-fluent. Fails to follow instructions and contains substantial ungrounded information. Severely lacking in conciseness."
+                    
+        }
+    ]
+]
+
