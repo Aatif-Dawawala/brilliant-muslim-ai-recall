@@ -71,8 +71,13 @@ custom_text_quality = PointwiseMetric(
 
 metrics_path = "eval/metrics.json"
 
+metrics = []
+
 with open(metrics_path, 'r') as f:
     metric_data = json.load(f)
+
+for i in range(len(metric_data)):
+    metrics[i] = PointwiseMetric()
 
 
 def main(dataset_path: str, project_id: str, results_path: str) -> None:
