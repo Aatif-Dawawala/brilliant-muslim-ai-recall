@@ -14,28 +14,7 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
 from utilities.print_average import get_average
-
-def generate_metrics():
-
-    metrics_path = "eval/metrics.json"
-
-    metrics = []
-
-    with open(metrics_path, 'r') as f:
-        metric_data = json.load(f)
-
-    for i in range(len(metric_data)):
-        
-        metrics.append(PointwiseMetric(
-                metric=metric_data[i][0],
-                metric_prompt_template=PointwiseMetricPromptTemplate(
-                    criteria=metric_data[i][1],
-                    rating_rubric=metric_data[i][2]
-                )
-            )
-        )
-
-    return metrics
+from services.generate_metrics import generate_metrics
 
 
 def main(dataset_path: str, project_id: str, results_path: str) -> None:
@@ -68,15 +47,8 @@ def main(dataset_path: str, project_id: str, results_path: str) -> None:
     pointwise_result = eval_task.evaluate()
     print(pointwise_result.metrics_table)
 
-    try:
-        print(os.listdir())
-        print(os.getcwd())
-        with open(results_path, "w") as f:
-            f.write(pointwise_result.metrics_table.to_csv(index=False))
-    except OSError as exc:
-        raise RuntimeError(
-            f"Could not write results to {results_path}: {exc}"
-        ) from exc
+    pointwise_result.metrics_table.to_csv(results_path, index=False, encoding="utf-8")
+
 
     aiplatform.ExperimentRun(
         run_name=pointwise_result.metadata["experiment_run"],
