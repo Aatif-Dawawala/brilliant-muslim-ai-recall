@@ -37,7 +37,7 @@ def main(dataset_path: str, project_id: str, results_path: str) -> None:
             f"Could not initialize Vertex AI for project '{project_id}': {exc}"
         ) from exc
 
-    eval_dataset = pd.read_csv(dataset_path)
+    eval_dataset = pd.read_csv(dataset_path, encoding="utf-8")
 
     eval_task = EvalTask(
         dataset=eval_dataset,
