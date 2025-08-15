@@ -8,6 +8,7 @@ from vertexai.evaluation import EvalTask, PointwiseMetric, PointwiseMetricPrompt
 from google.cloud import aiplatform
 import csv
 import json
+from pathlib import Path
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
@@ -47,8 +48,10 @@ def main(dataset_path: str, project_id: str, results_path: str) -> None:
     pointwise_result = eval_task.evaluate()
     print(pointwise_result.metrics_table)
 
-    pointwise_result.metrics_table.to_csv(results_path, index=False, encoding="utf-8")
 
+    Path(os.path.dirname(results_path)).mkdir(parents=True, exist_ok=True)
+    with open(results_path, "w", encoding="utf-8", newline="") as f:
+        pointwise_result.metrics_table.to_csv(f, index=False)
 
     aiplatform.ExperimentRun(
         run_name=pointwise_result.metadata["experiment_run"],
@@ -91,4 +94,3 @@ if __name__ == "__main__":
     except Exception as exc:
         print(f"Error: {exc}", file=sys.stderr)
         sys.exit(1)
-

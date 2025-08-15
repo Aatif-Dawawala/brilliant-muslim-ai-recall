@@ -11,7 +11,7 @@ sys.path.append(parent_dir)
 
 def generate_metrics():
 
-    metrics_path = "eval/metrics.json"
+    metrics_path = "data/metrics.json"
 
     metrics = []
 
