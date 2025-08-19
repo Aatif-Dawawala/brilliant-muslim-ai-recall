@@ -16,6 +16,22 @@
             "1": "(Very bad). Very poorly written, incoherent, and non-fluent. Fails to follow instructions and contains substantial ungrounded information. Severely lacking in conciseness."
                     
         }
+    ],
+    [
+        "instruction-following",
+        {
+            "transiliteration": "The text does not criticize the user for using Arabic transliterated in English.",
+            "extra-content": "The text does not criticize the user for providing extra content beyond what was covered in the lesson. The text does not tell the user to stick to only talking about the lesson content.",
+            "meta": "The text does not use meta-language, such as 'the provided material' or 'the text provided'. The text never refers to the prompt given to the model.",
+            "quality-critique": "The text does not critique the user based on the English grammatical quality or coherence of their response. The text only critiques the user based on their knowledge of Arabic, not the structure of their response."
+        }, 
+        {
+            "5": "(Very good). Follows instructions perfectly with no slip-ups.",
+            "4": "(Good). Mostly follows instructions, with one or two slight hiccups, but nothing significant",
+            "3": "(Ok). Adequate response that follows some direction.",
+            "2": "(Bad). Barely follows directions, uses significant meta-language and criticizes the user unfairly.",
+            "1": "(Very bad). Doesn't follow any directions whatsoever. The text breaks all the rules with no regard for instruction following."
+        }
     ]
 ]
 
