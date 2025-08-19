@@ -12,6 +12,6 @@ eval_results = "tests/eval_results.csv"
 def test_get_average():
     average = get_average(eval_results)
 
-    assert average == 4.339285714285714
+    assert average == {'custom_text-quality/score': 4.379746835443038, 'instruction-following/score': 4.935897435897436}
 
 test_get_average()
