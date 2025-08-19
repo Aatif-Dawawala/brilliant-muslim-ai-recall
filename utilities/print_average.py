@@ -19,7 +19,6 @@ def get_average(file_name = "data/eval_results.csv"):
 
     for i in range(len(metric_data)):
         metrics.append(metric_data[i][0] + "/score")
-    print(metrics)
 
     with open(file_name, 'r', encoding="utf-8") as file: 
         dict_reader = csv.DictReader(file)

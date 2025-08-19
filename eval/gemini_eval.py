@@ -58,7 +58,7 @@ def main(dataset_path: str, project_id: str, results_path: str) -> None:
         experiment=pointwise_result.metadata["experiment"],
     ).delete()
 
-    print(f"The average score is: {round(get_average(), 2)}")
+    print(f"The average score is: {get_average()}")
 
 
 if __name__ == "__main__":
