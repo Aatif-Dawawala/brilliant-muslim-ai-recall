@@ -42,5 +42,5 @@ def evaluate(prompt: str, model_choice: str) -> dict:
     elif model_choice == "OpenAI":
         response = openaiAgent.run_sync(user_prompt=prompt)
     
-    print(((response.output).strip("```")).strip("json"))
-    return json.loads(((response.output).strip("```")).strip("json"))
+    print(response.output.strip("```").strip("json"))
+    return json.loads(response.output.strip("```").strip("json"))
