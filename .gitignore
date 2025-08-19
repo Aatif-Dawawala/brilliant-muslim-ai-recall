@@ -5,4 +5,4 @@ __pycache__/
 eval_results.txt
 eval_dataset.csv
 eval_results.csv
-prompt_dataset.csv
+!tests/eval_results.csv
