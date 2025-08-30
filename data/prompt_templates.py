@@ -1,8 +1,7 @@
 def build_rag_prompt(user_response: str, retrieved_text: str, key_points: list[str]) -> str:
     key_points_text = "\n".join(f"- {pt}" for pt in key_points)
 
-    return f"""
-You are an Arabic language tutor.
+    return f"""You are an Arabic language tutor.
 
 Instructions:
 - Identify what the student got right, wrong, and left out.

@@ -12,6 +12,7 @@ import streamlit as st
 
 from utilities.print_average import get_average
 from eval.gemini_eval import main as gemini_main
+from data.prompt_templates import build_rag_prompt
 
 
 def run_eval(dataset_path: str, project_id: str, results_path: str) -> None:
@@ -34,6 +35,7 @@ def render_dashboard() -> None:
     """Display the evaluation dashboard in Streamlit."""
 
     st.title("Model Evaluation Dashboard")
+    st.header("Gemini 2.5 Pro")
 
     results_path = st.text_input(
         "Results file", value="data/eval_results.csv", key="results_path"
@@ -59,6 +61,11 @@ def render_dashboard() -> None:
 
     if os.path.exists(results_path):
         df = pd.read_csv(results_path)
+
+        st.subheader("Prompt")
+
+        st.text_area("", value=build_rag_prompt("{user_response}", "{retrieved_text}", ["{key_points}"]), height=340)
+
         st.subheader("Raw Evaluation Results")
         st.dataframe(df)
 
