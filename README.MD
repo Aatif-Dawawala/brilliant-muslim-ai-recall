@@ -20,6 +20,7 @@ An **interactive, AI-powered recall trainer** built for learners of the *Bayyina
   * [Install Dependencies](#install-dependencies)
   * [Environment Variables](#environment-variables)
   * [Run Locally](#run-locally)
+  * [Run Tests](#run-tests)
 * [Architecture](#architecture)
 * [Contributing](#contributing)
 * [License](#license)
@@ -87,6 +88,12 @@ streamlit run streamlit_app.py
 ```
 
 The app will open at [http://localhost:8501](http://localhost:8501).
+
+### Run Tests
+
+```bash
+pytest
+```
 
 ## Architecture
 
