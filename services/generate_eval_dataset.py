@@ -23,7 +23,6 @@ with open(prompt_dataset_path, "r", encoding="utf-8") as file:
 with open(eval_dataset_path, "r", encoding="utf-8") as file:
     dict_reader = csv.DictReader(file)
     csv_rows = list(dict_reader)
-    for row_dict in csv_rows:
         
 
         
