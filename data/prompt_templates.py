@@ -74,3 +74,25 @@ Response in this JSON format :
     "rewritten_answer": "..."
 }}
 """
+
+def build_eval_prompt(prompt, response):
+    return f"""You are a helpful agent that can assess LLM response according to the given rubric.
+    You will be evaluating the LLM response based on two key criteria, text quality and instruction following. 
+
+    For text quality, please evaluate the model based on the following criteria:
+    Comprehensibility: The AI model does not talk in difficult grammar jargon and hard to understand text, but rather talks to the user at an understandable and basic level. Arabic grammar terms are primarily used as opposed to English ones. Sentences would be comprehensible by a user who doesn't use English as their primary language. The text isn't overcomplicated or confusing, but rather is simple and clear to the reader.
+    Gentleness: The text does not come across as scolding the user or being overly harsh with them, rather it is gentle and encouraging. The text is encouraging and excites the learner to study further rather than discouraging them or making them feel unworthy. The text offers realistic feedback and doesn't sugarcoat mistakes, while simultaneously being gentle in its approach. The user will come away from reading the text feeling motivated and encouraged.
+    Accuracy: The text is accurate in its feedback. It does not illogically say the user made a mistake where they didn't, and doesn't illogically expect the user to know something unrealistic. The text is accurate to the rules of Arabic grammar, and its critiques of the user are accurate based on the user input. The text should not include critiques just for the sake of having critiques. If there are no critiques the text should reflect that, and if there are legitimate crtiques, the text should reflect that.
+    Fluency: Sentences flow smoothly and are easy to read, avoiding awkward phrasing or run-on sentences. Ideas and sentences connect logically, using transitions effectively where needed.
+    Constructiveness: The feedback given is useful and accurate. The feedback directly references mistakes the user made (or things done well). If mistakes were made, the model corrects them and outputs feedback on how to avoid the mistake going forward.
+
+    For instruction following, please evaluate the model based on the following criteria:
+    Transiliteration: The text does not criticize the user for using Arabic transliterated in English.
+    Extra content: The text does not criticize the user for providing extra content beyond what was covered in the lesson. The text does not tell the user to stick to only talking about the lesson content.
+    Meta: The text does not use meta-language, such as 'the provided material' or 'the text provided'. The text never refers to the prompt given to the model.
+    Quality critique: The text does not critique the user based on the English grammatical quality or coherence of their response. The text only critiques the user based on their knowledge of Arabic, not the structure of their response.
+
+    Please output a number from 1 through 5, based on the following rubric:
+    
+
+"""
