@@ -56,3 +56,13 @@ def append_prompt_data(retrieved_text: str, key_points_text: str, user_response:
     pd.DataFrame([row]).to_csv(
         path, mode="a", header=not os.path.exists(path), index=False
     )
+
+def append_result(prompt, response, grade, path):
+    row = {
+        "prompt": prompt,
+        "response": response,
+        "grade": grade
+    }
+    pd.DataFrame([row]).to_csv(
+        path, mode="a", header=not os.path.exists(path), index=False
+    )
