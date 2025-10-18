@@ -37,5 +37,8 @@ def get_average(file_name = "data/eval_results.csv"):
         
     return averages
 
+def get_new_average(file_name):
+    sum =0;    
+
 if __name__ == "__main__":
     print(get_average())

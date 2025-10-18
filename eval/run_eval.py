@@ -15,8 +15,8 @@ from services.model_switcher import evaluate
 from eval.evaluation_logger import append_example, append_result
 
 prompt_dataset_path = "data/prompt_dataset.csv"
-eval_dataset_path = "data/eval_datasetnew.csv"
-results_path = "data/eval_resultsnew.csv"
+# eval_dataset_path = "data/eval_datasetnew.csv"
+# results_path = "data/eval_resultsnew.csv"
 
 def run_eval(prompt, response_input):
     openai_llm = OpenAIModel(
@@ -39,7 +39,7 @@ def run_eval(prompt, response_input):
     eval_output = openaiAgent.run_sync(user_prompt=instructions)
     return eval_output.output
 
-def generate_dataset():
+def generate_dataset(eval_dataset_path):
     with open(prompt_dataset_path, "r", encoding="utf-8") as file:
         dict_reader = csv.DictReader(file)
         csv_rows = list(dict_reader)
@@ -52,16 +52,16 @@ def generate_dataset():
             if count >= 3:
                 break
 
-def generate_results():
-    with open(eval_dataset_path, "r", encoding="utf-8") as file:
+def generate_results(gen_dataset, dataset_path, results_path):
+    if (generate_dataset):
+        generate_dataset(dataset_path)
+    with open(dataset_path, "r", encoding="utf-8") as file:
         dict_reader = csv.DictReader(file)
         csv_rows = list(dict_reader)
         for row_dict in csv_rows:
             output = run_eval(row_dict["prompt"], row_dict["response"]);
             append_result(row_dict["prompt"], row_dict["response"], output, results_path)
 
-generate_dataset()
-generate_results()
         
 
     

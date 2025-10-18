@@ -11,11 +11,11 @@ import pandas as pd
 import streamlit as st
 
 from utilities.print_average import get_average
-from eval.gemini_eval import main as gemini_main
+from eval.run_eval import generate_results
 from data.prompt_templates import build_rag_prompt
 
 
-def run_eval(dataset_path: str, project_id: str, results_path: str) -> None:
+def run_eval(gen_dataset, dataset_path: str, results_path: str) -> None:
     """Run the evaluation script and write results to ``results_path``.
 
     Parameters
@@ -28,7 +28,7 @@ def run_eval(dataset_path: str, project_id: str, results_path: str) -> None:
         Destination file to which evaluation results are written.
     """
 
-    gemini_main(dataset_path, project_id, results_path)
+    generate_results(gen_dataset, dataset_path, results_path)
 
 
 def render_dashboard() -> None:
@@ -44,17 +44,17 @@ def render_dashboard() -> None:
     dataset_path = st.text_input(
         "Dataset file", value="data/eval_dataset.csv", key="dataset_path"
     )
-    project_id = st.text_input(
-        "Project ID", value=os.getenv("PROJECT_ID", ""), key="project_id"
+    gen_dataset = st.toggle(
+        "Generate Dataset?", value=True
     )
 
     if st.button("Run Evaluation"):
-        if not project_id:
-            st.error("A project ID must be provided to run the evaluation.")
+        if (not results_path or not dataset_path):
+            st.error("All the fields must be populated prior to running an eval.")
         else:
             with st.spinner("Running evaluation..."):
                 try:
-                    run_eval(dataset_path, project_id, results_path)
+                    run_eval(gen_dataset, dataset_path, results_path)
                     st.success("Evaluation completed successfully.")
                 except Exception as exc:  # pragma: no cover - UI feedback only
                     st.error(f"Evaluation failed: {exc}")
