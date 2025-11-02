@@ -16,20 +16,17 @@ from data.prompt_templates import build_rag_prompt
 
 
 def run_eval(gen_dataset, dataset_path: str, results_path: str) -> None:
-    """Run the evaluation script and write results to ``results_path``.
-
-    Parameters
-    ----------
-    dataset_path:
-        Path to the dataset containing prompts and responses.
-    project_id:
-        Google Cloud project identifier used for Vertex AI.
-    results_path:
-        Destination file to which evaluation results are written.
-    """
+    """Run the evaluation script and write results to ``results_path``."""
 
     generate_results(gen_dataset, dataset_path, results_path)
 
+def set_average(results_path):
+    try:
+        average = get_average(results_path)
+    except KeyError:
+        average = "Make sure to enter a valid results path!"
+
+    return average
 
 def render_dashboard() -> None:
     """Display the evaluation dashboard in Streamlit."""
@@ -69,9 +66,9 @@ def render_dashboard() -> None:
         st.subheader("Raw Evaluation Results")
         st.dataframe(df)
 
-        st.subheader("Average Scores")
-        averages = get_average(results_path)
-        st.json(averages)
+        st.subheader("Average Score")
+
+        st.text(str(set_average(results_path)))
     else:
         st.warning(f"Evaluation results file not found at {results_path}.")
         st.info("Run evaluations to generate the results file.")

@@ -53,7 +53,8 @@ def generate_dataset(eval_dataset_path):
                 break
 
 def generate_results(gen_dataset, dataset_path, results_path):
-    if (generate_dataset):
+    print("RUNNING")
+    if (gen_dataset):
         generate_dataset(dataset_path)
     with open(dataset_path, "r", encoding="utf-8") as file:
         dict_reader = csv.DictReader(file)
@@ -61,8 +62,6 @@ def generate_results(gen_dataset, dataset_path, results_path):
         for row_dict in csv_rows:
             output = run_eval(row_dict["prompt"], row_dict["response"]);
             append_result(row_dict["prompt"], row_dict["response"], output, results_path)
-
-        
 
     
 
